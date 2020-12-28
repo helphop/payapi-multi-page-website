@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="265px" height="500px" viewBox="0 0 265 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-phone-mockup</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#454545" offset="0%"></stop>
+            <stop stop-color="#999999" offset="22.628%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="30.702%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="22.218%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="54.678%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="30.591%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="22.218%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="54.678%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.221%" id="linearGradient-6">
+            <stop stop-color="#9CB6CD" offset="0%"></stop>
+            <stop stop-color="#9AB3CA" offset="42.056%"></stop>
+            <stop stop-color="#557496" offset="71.659%"></stop>
+            <stop stop-color="#475178" offset="100%"></stop>
+        </linearGradient>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-7"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration-phone-mockup">
+            <g id="b-link" transform="translate(3.000000, 0.000000)" fill="#000000" fill-rule="nonzero">
+                <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="b"></path>
+            </g>
+            <g id="b-link" transform="translate(3.000000, 0.000000)" fill="#213648" fill-rule="nonzero">
+                <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="b"></path>
+            </g>
+            <path d="M228.748,0 L35.924,0 C26.92,0.549 18.618,4.657 11.015,12.324 C15.905,8.056 24.625,2.344 36.155,2.344 L228.517,2.344 C240.047,2.344 248.767,8.056 253.657,12.324 C246.054,4.657 237.751,0.549 228.748,0 Z" id="Path" fill-opacity="0.65" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.596"></path>
+            <path d="M255.999,462.67 L255.999,34.983 C255.999,23.507 251.782,19.265 249.266,16.541 C246.75,13.818 246.643,12.428 250.258,14.485 C253.873,16.541 261.103,22.532 261.103,34.983 L261.103,462.67 C261.103,475.121 253.873,481.111 250.258,483.168 C246.643,485.224 246.75,483.835 249.266,481.111 C251.782,478.387 255.999,474.145 255.999,462.67 L255.999,462.67 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.75"></path>
+            <path d="M12.1161638,462.67 L12.1161638,34.983 C12.1161638,23.507 7.89916384,19.265 5.38316384,16.541 C2.86716384,13.818 2.76016384,12.428 6.37516384,14.485 C9.99016384,16.541 17.2201638,22.532 17.2201638,34.983 L17.2201638,462.67 C17.2201638,475.121 9.99016384,481.111 6.37516384,483.168 C2.76016384,485.224 2.86716384,483.835 5.38316384,481.111 C7.89916384,478.387 12.1161638,474.145 12.1161638,462.67 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.75" transform="translate(10.394082, 248.826259) scale(-1, 1) translate(-10.394082, -248.826259) "></path>
+            <path d="M3,101.557 L3.965,101.557 L3.965,161.907 C3.18106397,161.454394 2.79886241,160.531678 3.03314835,159.657311 C3.26743429,158.782944 4.05978864,158.174949 4.965,158.174949 C5.87021136,158.174949 6.66256571,158.782944 6.89685165,159.657311 C7.13113759,160.531678 6.74893603,161.454394 5.965,161.907 L3,161.907 C3.78393603,162.359606 4.16613759,163.282322 3.93185165,164.156689 C3.69756571,165.031056 2.90521136,165.639051 2,165.639051 C1.09478864,165.639051 0.302434286,165.031056 0.0681483474,164.156689 C-0.166137592,163.282322 0.216063969,162.359606 1,161.907 L1,101.557 L3,101.557 Z M260.535,154.044 L261.5,154.044 L261.5,196.994 C260.716064,196.541394 260.333862,195.618678 260.568148,194.744311 C260.802434,193.869944 261.594789,193.261949 262.5,193.261949 C263.405211,193.261949 264.197566,193.869944 264.431852,194.744311 C264.666138,195.618678 264.283936,196.541394 263.5,196.994 L262.535,196.994 C263.318936,197.446606 263.701138,198.369322 263.466852,199.243689 C263.232566,200.118056 262.440211,200.726051 261.535,200.726051 C260.629789,200.726051 259.837434,200.118056 259.603148,199.243689 C259.368862,198.369322 259.751064,197.446606 260.535,196.994 L260.535,154.044 L260.535,154.044 Z" id="Shape" fill="#2E423C" fill-rule="nonzero"></path>
+            <g id="Group" transform="translate(16.074000, 12.444000)">
+                <g id="f-link" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="f"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="f"></g>
+                    <polygon id="Path" fill="url(#linearGradient-6)" fill-rule="nonzero" mask="url(#mask-5)" points="-0.074 0 232.926 0 232.926 465 -0.074 465"></polygon>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="f"></g>
+                    <text id="12:49" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-8)" font-family="Helvetica" font-size="32" font-weight="normal">
+                        <tspan x="73.926" y="127.556">12:49</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group" transform="translate(23.000000, 167.000000)" fill-rule="nonzero">
+                <g id="j-link" fill="#000000">
+                    <rect id="j" x="0" y="0" width="218" height="87" rx="5"></rect>
+                </g>
+                <g id="j-link" fill="#FBFCFE">
+                    <rect id="j" x="0" y="0" width="218" height="87" rx="5"></rect>
+                </g>
+                <g transform="translate(16.000000, 15.000000)" font-family="Helvetica" font-size="10" font-weight="normal">
+                    <g fill="#BA4270" id="PayAPI">
+                        <text>
+                            <tspan x="0" y="10">PayAPI</tspan>
+                        </text>
+                    </g>
+                    <g opacity="0.5" transform="translate(144.000000, 0.000000)" fill="#36536B" id="Just-Now">
+                        <text>
+                            <tspan x="0.05" y="10">Just Now</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g transform="translate(16.000000, 30.000000)" fill="#36536B" font-family="Helvetica" font-size="10" font-weight="normal">
+                    <text id="The-payment-has-been-processed.-The">
+                        <tspan x="0" y="10">The payment has been processed. The</tspan>
+                    </text>
+                    <text id="total-amount-deducted-from-your">
+                        <tspan x="0" y="24">total amount deducted from your</tspan>
+                    </text>
+                    <text id="account-is">
+                        <tspan x="0" y="38">account is</tspan>
+                    </text>
+                    <text id="US-$104.90">
+                        <tspan x="47.62" y="38">US $104.90</tspan>
+                    </text>
+                    <text id=".">
+                        <tspan x="105.855" y="38">.</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

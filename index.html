@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;700&display=swap"
       rel="stylesheet">
       <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
@@ -13,47 +13,45 @@
   </head>
 
   <body>
-    <header>
-      <!-- <img class="header__circle" src="assets/shared/desktop/bg-pattern-circle.svg" alt="big circle"> -->
-      <div class="container">
-        <!--I may need to put these in a div with a split-->
+    <header class="bg-circle">
+      <div class="container flow-content">
         <div class="split-adapt space-bt">
           <div class="logo"><img src="assets/shared/desktop/logo.svg" alt="logo"></div>
-          <div class="menu__open"><img src="assets/shared/mobile/menu.svg" alt="menu icon"></div>
-          <div class="menu">
-            <div class="menu__close"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
-            <nav class="split justify-sb">
-              <ul class="menu__list flow-content">
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-              <a class="btn btn-primary">Schedule a Demo</a>
-            </nav>
-          </div>
+          <div class="menu__open"><img  src="assets/shared/mobile/menu.svg" alt="menu icon"></div>
         </div>
-        <div class="hero">
-          <div class="hero__text">
+        <div class="menu bg-circle bg-dark close">
+          <div class="menu__close"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
+          <nav class="split justify-sb">
+            <ul class="menu__list flow-content">
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+          </nav>
+        </div>
+        <div class="hero flow-content">
+          <div class="hero__img">
+            <img class="drop-shadow" src="assets/home/desktop/illustration-phone-mockup2.svg" />
+          </div>
+          <div class="hero__text flow-content">
             <h1>Start building with our APIs for absolutely free.</h1>
             <form action="" class="demo" method="post">
-              <div class="input__group">
+              <div class="input__group split">
                 <input type="email" class="demo__email" placeholder="Enter email address">
                 <button type="submit" class="btn btn-primary">Schedule a Demo</button>
               </div>
             </form>
             <p>Have any questions? <a href="contact.html">Contact Us</a></p>
           </div>
-          <div class="hero__img">
-            <img src="assets/home/desktop/illustration-phone-mockup.svg" />
-          </div>
         </div>
       </div>
     </header>
 
-    <section class="work">
+    <section class="work bg-dark bg-circle text-center">
       <div class="container">
-        <div class="work__content">
-          <div class="logos">
+        <div class="work__content flow-content-large">
+          <div class="logos split-auto justify-ic ">
             <img src="assets/shared/desktop/tesla.svg" alt="tesla">
             <img src="assets/shared/desktop/microsoft.svg" alt="microsoft">
             <img src="assets/shared/desktop/hewlett-packard.svg" alt="hewlett-packard">
@@ -61,36 +59,36 @@
             <img src="assets/shared/desktop/google.svg" alt="google">
             <img src="assets/shared/desktop/nvidia.svg" alt="nvidia">
           </div>
-          <div class="work__text">
-            <h2>Who we work with</h2>
+          <div class="work__text flow-content">
+            <h2 class="sm">Who we work with</h2>
             <p>Today, millions of people around the world have successfully connected
             their accounts to apps they love using our API. We provide developers
             with the tools they need to create easy and accessible experiences
             for their users.
             About Us</p>
-            <a href="about.html" class="btn btn--dark">About Us</a>
           </div>
+          <a href="about.html" class="btn btn-dark btn-inline">About Us</a>
         </div>
       </div>
 
     </section>
     <section class="highlights">
-      <div class="container">
-        <div class="features split-auto">
+      <div class="container flow-content-large">
+        <div class="features flow-content">
           <div class="features__img">
-            <img src="assets/home/desktop/illustration-easy-to-implement.svg" alt="code image">
+            <img class="drop-shadow" src="assets/home/desktop/illustration-easy-to-implement2.svg" alt="code image">
           </div>
-          <div class="features__text">
-           <h2>Easy to implement</h2>
+          <div class="features__text flow-content">
+           <h2 class="sm">Easy to implement</h2>
            <p>Our API comes with just a few lines of code. You’ll be up and running in
           no time. We built our documentation page to integrate payments functionality
           with ease.</p>
           </div>
           <div class="features__img">
-            <img src="assets/home/desktop/illustration-simple-ui.svg" alt="phone images">
+            <img class="drop-shadow" src="assets/home/desktop/illustration-simple-ui.svg" alt="phone images">
           </div>
-          <div class="features__text">
-              <h2>Simple UI & UX</h2>
+          <div class="features__text flow-content">
+              <h2 class="sm">Simple UI & UX</h2>
               <p>Our pre-built form is easy to integrate in your app or website’s checkout
               flow and designed to optimize conversion.</p>
           </div>
@@ -126,7 +124,6 @@
             <p>Have any questions? <a href="contact.html">Contact Us</a></p>
           </div>
         </div>
-
       </div>
     </section>
     <footer>

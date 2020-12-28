@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="445px" height="284px" viewBox="0 0 445 284" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-easy-to-implement</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration-easy-to-implement" fill-rule="nonzero">
+            <g id="Group">
+                <g id="b-link" fill="#000000">
+                    <rect id="b" x="0" y="0" width="445" height="284" rx="8"></rect>
+                </g>
+                <g id="b-link" fill="#1B262F">
+                    <rect id="b" x="0" y="0" width="445" height="284" rx="8"></rect>
+                </g>
+            </g>
+            <path d="M8,0 L437,0 C441.418278,-3.22053779e-14 445,3.581722 445,8 L445,32 L445,32 L0,32 L0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 Z" id="Path" fill="#2E3F4D"></path>
+            <g id="Group" transform="translate(16.000000, 12.000000)">
+                <circle id="Oval" fill="#BA4270" cx="8" cy="8" r="8"></circle>
+                <circle id="Oval" fill="#527695" cx="30.4" cy="8" r="8"></circle>
+                <circle id="Oval" fill="#36536B" cx="52.8" cy="8" r="8"></circle>
+            </g>
+            <g id="Group" transform="translate(32.000000, 73.000000)" fill="#FBFCFE" font-family="Helvetica" font-size="13" font-weight="normal">
+                <text id="&lt;form-id=&quot;form-id&quot;-method=&quot;GET&quot;&gt;-&lt;/form&gt;">
+                    <tspan x="0" y="13">&lt;form id="form-id" method="GET"&gt; &lt;/form&gt;</tspan>
+                </text>
+                <text id="&lt;script">
+                    <tspan x="0" y="33">&lt;script</tspan>
+                </text>
+                <text id="src=&quot;https://loremipsum.com/api.js&quot;">
+                    <tspan x="0" y="53">src="https://loremipsum.com/api.js"</tspan>
+                </text>
+                <text id="data-client-name=&quot;Your-Company's-Name&quot;">
+                    <tspan x="0" y="73">data-client-name="Your Company's Name"</tspan>
+                </text>
+                <text id="data-form-id=&quot;form-id&quot;">
+                    <tspan x="0" y="93">data-form-id="form-id"</tspan>
+                </text>
+                <text id="data-key=&quot;test_key&quot;">
+                    <tspan x="0" y="113">data-key="test_key"</tspan>
+                </text>
+                <text id="data-product=&quot;transactions&quot;">
+                    <tspan x="0" y="133">data-product="transactions"</tspan>
+                </text>
+                <text id="data-env=&quot;sandbox&quot;&gt;">
+                    <tspan x="0" y="153">data-env="sandbox"&gt;</tspan>
+                </text>
+                <text id="&lt;/script&gt;">
+                    <tspan x="0" y="173">&lt;/script&gt;</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

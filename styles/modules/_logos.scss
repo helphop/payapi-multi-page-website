@@ -1,0 +1,7 @@
+.logos {
+  --min: 130px;
+}
+
+.logos img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
+}

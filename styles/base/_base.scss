@@ -60,16 +60,13 @@ a {
   color: inherit;
   font-family: inherit;
   display: inline-block;
+  text-decoration: none;
 }
 
 body {
-  font-family: var(--ff-primary);
-  font-size: var(--fs-200);
-  line-height: var(--lh-800);
   background: var(--clr-blue-100);
 }
 
 .container {
-  padding: 2rem;
+  padding: 4rem 2rem;
 }
-

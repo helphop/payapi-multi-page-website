@@ -1,0 +1,13 @@
+input {
+  background: var(--clr-neutral-100);
+  border-radius: var(--br);
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  box-shadow: var(--box-shadow-100);
+}
+
+::placeholder {
+  color: var(--clr-blue-300);
+  font-weight: var(--fw-700);
+  font-family: var(--ff-primary);
+}

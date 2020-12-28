@@ -1,8 +1,29 @@
 .btn {
+  color: var(--fg-btn, var(--clr-neutral-100));
   border-radius: var(--br);
   padding: 0.5rem 1.5rem;
+  width: 100%;
+  display: block;
+  font-weight: var(--fw-700);
+  transition: all .4s ease;
+  background: var(--bg-btn, var(--clr-primary-100));
+  &:hover {
+    background: var(--bg-btn, var(--clr-primary-200));
+  }
 }
 
-.btn-primary {
-  background: var(--clr-primary-100);
+
+.btn-dark {
+  --bg-btn: var(--clr-blue-500);
+  --fg-btn: var(--clr-neutral-100);
+  border: 1px solid var(--fg-btn);
+  &:hover {
+    --bg-btn: var(--clr-neutral-100);
+    --fg-btn: var(--clr-blue-500);
+  }
+}
+
+.btn-inline {
+  display: inline-block;
+  width: auto;
 }

@@ -1,0 +1,16 @@
+.hero {
+  text-align: center;
+}
+.hero__img {
+width: 30%;
+ margin: 0 auto;
+ filter: drop-shadow(var(--box-shadow-100));
+}
+
+.features {
+  text-align: center;
+
+  &__img {
+    margin: 0 auto;
+  }
+}

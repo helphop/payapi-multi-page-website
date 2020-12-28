@@ -1,19 +1,16 @@
 .menu {
+  background-position: -222px -510px;
   position: fixed;
   padding: 2rem;
-  background: var(--clr-blue-500);
-  color: var(--clr-neutral-200);
   font-weight: var(--fw-300);
   top: 0;
   right: 0;
   width: 80%;
   height: 100vh;
   text-align: center;
-
   transition: all 0.4s ease;
-  a {
-    text-decoration: none;
-  }
+  z-index: 10;
+  margin-top: 0;
   &__close {
    padding-bottom: 1rem;
     border-bottom: solid 1px  var(--clr-neutral-300);
@@ -29,9 +26,11 @@
 
 ul.menu__list {
   margin: 2rem 0;
+  font-size: var(--fs-250);
 }
 
 .menu__open img,
 .menu__close img {
 cursor: pointer;
+position: relative;
 }

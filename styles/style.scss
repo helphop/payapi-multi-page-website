@@ -1,8 +1,9 @@
 @import "abstracts/variables";
 @import "base/base";
-@import "base/typography";
 @import "base/utilities";
-
-@import "modules/header";
+@import "base/typography";
+@import "modules/logos";
 @import "components/menu";
 @import "components/buttons";
+@import "components/form";
+@import "pages/home";
