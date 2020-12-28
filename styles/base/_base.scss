@@ -1,0 +1,75 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: var(--ff-secondary);
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  font: inherit;
+}
+
+input:focus {
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  display: inline-block;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-200);
+  line-height: var(--lh-800);
+  background: var(--clr-blue-100);
+}
+
+.container {
+  padding: 2rem;
+}
+

@@ -1,0 +1,51 @@
+.flow-content > * + * {
+  margin-top: calc(1.5 * 1rem);
+}
+
+.flow-content-large > * + * {
+  margin-top: calc(3 * 1rem);
+}
+
+.split-auto {
+  display: grid;
+  gap: var(--gap, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min, min-content), 1fr));
+}
+
+.split-adapt {
+  display: grid;
+  gap: var(--gap, 1rem);
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+
+}
+
+@media (min-width: 40em) {
+  .split {
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+  }
+}
+
+.split {
+ display: grid;
+  gap: var(--gap, 1rem);
+  grid-auto-columns: 1fr;
+}
+
+
+.space-bt {
+  justify-content: space-between;
+}
+
+.justify-ic {
+  justify-items: center;
+}
+
+.justify-cc {
+  justify-content: center;
+}
+
+.align-ic {
+  align-items: center;
+}
