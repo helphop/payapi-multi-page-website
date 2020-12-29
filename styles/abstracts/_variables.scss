@@ -39,10 +39,11 @@
     --fs-600: 3rem; //h2 large
     --fs-700: 3rem; //h1 small
     --fs-800: 3rem; //h1 large
+    --fs-250: 0.9375rem;
   }
 
   //desktop
-  @media (min-width: 48em) {
+  @media (min-width: 48.1em) {
     --fs-400: 2rem; //h3
     --fs-700: 3.5rem; //h1 small
     --fs-800: 4.5rem; //h1 large

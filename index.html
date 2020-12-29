@@ -15,34 +15,35 @@
   <body>
     <header class="bg-circle">
       <div class="container flow-content">
-        <div class="split-adapt space-bt">
+        <div class="header__content split-adapt space-bt">
           <div class="logo"><img src="assets/shared/desktop/logo.svg" alt="logo"></div>
           <div class="menu__open"><img  src="assets/shared/mobile/menu.svg" alt="menu icon"></div>
+          <div class="menu close">
+            <div class="menu__close"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
+            <nav class="menu__nav">
+              <ul class="menu__list flow-content">
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+              <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+            </nav>
+          </div>
         </div>
-        <div class="menu bg-circle bg-dark close">
-          <div class="menu__close"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
-          <nav class="split justify-sb">
-            <ul class="menu__list flow-content">
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
-          </nav>
-        </div>
-        <div class="hero flow-content">
+        <div class="hero split align-ic">
           <div class="hero__img">
             <img class="drop-shadow" src="assets/home/desktop/illustration-phone-mockup2.svg" />
           </div>
-          <div class="hero__text flow-content">
+          <div class="hero__text flow-content-large">
             <h1>Start building with our APIs for absolutely free.</h1>
-            <form action="" class="demo" method="post">
-              <div class="input__group split">
+            <form action="" class="demo flow-content-small" method="post">
+              <div class="input__group">
                 <input type="email" class="demo__email" placeholder="Enter email address">
                 <button type="submit" class="btn btn-primary">Schedule a Demo</button>
               </div>
+              <p class="questions">Have any questions? <a href="contact.html">Contact Us</a></p>
             </form>
-            <p>Have any questions? <a href="contact.html">Contact Us</a></p>
+
           </div>
         </div>
       </div>
