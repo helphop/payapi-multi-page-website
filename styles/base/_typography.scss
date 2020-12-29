@@ -3,6 +3,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
   line-height: var(--lh-800);
+  text-align: center;
 }
 
 h1, .h1,
@@ -44,9 +45,14 @@ a {
   font-weight: var(--fw-700);
 
 }
+
 p,
 a {
   color: var(--fg, var(--clr-blue-200));
 }
 
-
+.benefit__title {
+  font-size: var(--fs-250);
+  font-weight: var(--fw-700);
+  color: var(--clr-blue-300);
+}

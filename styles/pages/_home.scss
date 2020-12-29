@@ -7,10 +7,13 @@ width: 30%;
  filter: drop-shadow(var(--box-shadow-100));
 }
 
-.features {
-  text-align: center;
 
-  &__img {
+.benefits {
+  --min: 300px;
+}
+
+.benefit {
+  img {
     margin: 0 auto;
   }
 }

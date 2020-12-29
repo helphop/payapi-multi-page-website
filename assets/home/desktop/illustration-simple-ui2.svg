@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="568px" height="500px" viewBox="0 0 568 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>illustration-simple-ui</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#454545" offset="0%"></stop>
+            <stop stop-color="#999999" offset="22.628%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="30.702%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="22.218%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="54.678%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="30.591%" y2="50%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#BABABA" offset="22.218%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="54.678%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-4"></path>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-6"></path>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-8"></path>
+        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="path-10"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="illustration-simple-ui">
+            <g id="Group" transform="translate(306.000000, 0.000000)" fill-rule="nonzero">
+                <g id="b-link" fill="#000000">
+                    <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="b"></path>
+                </g>
+                <g id="b-link" fill="#213648">
+                    <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="b"></path>
+                </g>
+            </g>
+            <path d="M531.748,0 L338.924,0 C329.92,0.549 321.618,4.657 314.015,12.324 C318.905,8.056 327.625,2.344 339.155,2.344 L531.517,2.344 C543.047,2.344 551.767,8.056 556.657,12.324 C549.054,4.657 540.751,0.549 531.748,0 Z" id="Path" fill-opacity="0.65" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.596"></path>
+            <path d="M558.999,462.67 L558.999,34.983 C558.999,23.507 554.782,19.265 552.266,16.541 C549.75,13.818 549.643,12.428 553.258,14.485 C556.873,16.541 564.103,22.532 564.103,34.983 L564.103,462.67 C564.103,475.121 556.873,481.111 553.258,483.168 C549.643,485.224 549.75,483.835 552.266,481.111 C554.782,478.387 558.999,474.145 558.999,462.67 L558.999,462.67 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.75"></path>
+            <path d="M315.116164,462.67 L315.116164,34.983 C315.116164,23.507 310.899164,19.265 308.383164,16.541 C305.867164,13.818 305.760164,12.428 309.375164,14.485 C312.990164,16.541 320.220164,22.532 320.220164,34.983 L320.220164,462.67 C320.220164,475.121 312.990164,481.111 309.375164,483.168 C305.760164,485.224 305.867164,483.835 308.383164,481.111 C310.899164,478.387 315.116164,474.145 315.116164,462.67 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.75" transform="translate(313.394082, 248.826259) scale(-1, 1) translate(-313.394082, -248.826259) "></path>
+            <g id="Group" transform="translate(303.000000, 101.000000)" fill="#2E423C" fill-rule="nonzero">
+                <path d="M3,0.556 L3.965,0.556 L3.965,60.907 C3.18106397,60.4543943 2.79886241,59.5316781 3.03314835,58.6573111 C3.26743429,57.7829441 4.05978864,57.1749492 4.965,57.1749492 C5.87021136,57.1749492 6.66256571,57.7829441 6.89685165,58.6573111 C7.13113759,59.5316781 6.74893603,60.4543943 5.965,60.907 L3,60.907 C3.78393603,61.3596057 4.16613759,62.2823219 3.93185165,63.1566889 C3.69756571,64.0310559 2.90521136,64.6390508 2,64.6390508 C1.09478864,64.6390508 0.302434286,64.0310559 0.0681483474,63.1566889 C-0.166137592,62.2823219 0.216063969,61.3596057 1,60.907 L1,0.557 L3,0.556 Z M260.535,53.043 L261.5,53.043 L261.5,95.993 C260.716064,95.5403943 260.333862,94.6176781 260.568148,93.7433111 C260.802434,92.8689441 261.594789,92.2609492 262.5,92.2609492 C263.405211,92.2609492 264.197566,92.8689441 264.431852,93.7433111 C264.666138,94.6176781 264.283936,95.5403943 263.5,95.993 L262.535,95.993 C263.318936,96.4456057 263.701138,97.3683219 263.466852,98.2426889 C263.232566,99.1170559 262.440211,99.7250508 261.535,99.7250508 C260.629789,99.7250508 259.837434,99.1170559 259.603148,98.2426889 C259.368862,97.3683219 259.751064,96.4456057 260.535,95.993 L260.535,53.043 Z" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(319.074000, 12.444000)" fill="#36536B" fill-rule="nonzero">
+                <g id="f-link">
+                    <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="f"></path>
+                </g>
+            </g>
+            <g id="Group" transform="translate(347.000000, 142.000000)">
+                <g fill-rule="nonzero" id="h-link">
+                    <g fill="#000000">
+                        <rect id="h" x="0" y="0" width="176" height="191" rx="5"></rect>
+                    </g>
+                    <g fill="#FBFCFE">
+                        <rect id="h" x="0" y="0" width="176" height="191" rx="5"></rect>
+                    </g>
+                </g>
+                <g transform="translate(18.000000, 103.000000)" fill="#36536B" fill-rule="nonzero" font-family="Helvetica" font-size="13" font-weight="normal">
+                    <text id="Payment-of">
+                        <tspan x="14.222" y="13">Payment of</tspan>
+                    </text>
+                    <text id="$9204">
+                        <tspan x="84.749" y="13">$9204</tspan>
+                    </text>
+                    <text id="is-completed-and">
+                        <tspan x="19.736" y="31">is completed and</tspan>
+                    </text>
+                    <text id="processed-successfully">
+                        <tspan x="0.676" y="49">processed successfully</tspan>
+                    </text>
+                </g>
+                <g transform="translate(59.000000, 36.000000)">
+                    <circle id="Oval" fill="#BA4270" fill-rule="nonzero" opacity="0.25" cx="28" cy="28" r="28"></circle>
+                    <polyline id="Path" stroke="#BA4270" stroke-width="3" points="19 29.696 23.577 34.273 36.85 21"></polyline>
+                </g>
+                <g transform="translate(23.000000, 176.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="#BA4270" x="0" y="0" width="131" height="30" rx="15"></rect>
+                    <g transform="translate(45.000000, 9.000000)" fill="#FBFCFE" font-family="Helvetica" font-size="11" font-weight="normal" id="Dismiss">
+                        <text>
+                            <tspan x="0.726" y="10">Dismiss</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+            <g id="Group">
+                <g transform="translate(3.000000, 0.000000)" fill-rule="nonzero" id="j-link">
+                    <g fill="#000000">
+                        <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="j"></path>
+                    </g>
+                    <g fill="#213648">
+                        <path d="M33.776,0.569 L225.01,0.569 C243.35,0.569 258.218,14.805 258.218,32.365 L258.218,467.635 C258.218,485.195 243.351,499.431 225.01,499.431 L33.776,499.431 C15.436,499.431 0.568,485.195 0.568,467.635 L0.568,32.365 C0.568,14.805 15.436,0.569 33.776,0.569 L33.776,0.569 Z" id="j"></path>
+                    </g>
+                </g>
+                <path d="M228.748,0 L35.924,0 C26.92,0.549 18.618,4.657 11.015,12.324 C15.905,8.056 24.625,2.344 36.155,2.344 L228.517,2.344 C240.047,2.344 248.767,8.056 253.657,12.324 C246.054,4.657 237.751,0.549 228.748,0 Z" id="Path" fill-opacity="0.65" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.596"></path>
+                <path d="M255.999,462.67 L255.999,34.983 C255.999,23.507 251.782,19.265 249.266,16.541 C246.75,13.818 246.643,12.428 250.258,14.485 C253.873,16.541 261.103,22.532 261.103,34.983 L261.103,462.67 C261.103,475.121 253.873,481.111 250.258,483.168 C246.643,485.224 246.75,483.835 249.266,481.111 C251.782,478.387 255.999,474.145 255.999,462.67 L255.999,462.67 Z" id="Path" fill="url(#linearGradient-2)" fill-rule="nonzero" opacity="0.75"></path>
+                <path d="M12.1161638,462.67 L12.1161638,34.983 C12.1161638,23.507 7.89916384,19.265 5.38316384,16.541 C2.86716384,13.818 2.76016384,12.428 6.37516384,14.485 C9.99016384,16.541 17.2201638,22.532 17.2201638,34.983 L17.2201638,462.67 C17.2201638,475.121 9.99016384,481.111 6.37516384,483.168 C2.76016384,485.224 2.86716384,483.835 5.38316384,481.111 C7.89916384,478.387 12.1161638,474.145 12.1161638,462.67 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.75" transform="translate(10.394082, 248.826259) scale(-1, 1) translate(-10.394082, -248.826259) "></path>
+                <g transform="translate(0.000000, 101.000000)" fill="#2E423C" fill-rule="nonzero" id="Shape">
+                    <path d="M3,0.556 L3.965,0.556 L3.965,60.907 C3.18106397,60.4543943 2.79886241,59.5316781 3.03314835,58.6573111 C3.26743429,57.7829441 4.05978864,57.1749492 4.965,57.1749492 C5.87021136,57.1749492 6.66256571,57.7829441 6.89685165,58.6573111 C7.13113759,59.5316781 6.74893603,60.4543943 5.965,60.907 L3,60.907 C3.78393603,61.3596057 4.16613759,62.2823219 3.93185165,63.1566889 C3.69756571,64.0310559 2.90521136,64.6390508 2,64.6390508 C1.09478864,64.6390508 0.302434286,64.0310559 0.0681483474,63.1566889 C-0.166137592,62.2823219 0.216063969,61.3596057 1,60.907 L1,0.557 L3,0.556 Z M260.535,53.043 L261.5,53.043 L261.5,95.993 C260.716064,95.5403943 260.333862,94.6176781 260.568148,93.7433111 C260.802434,92.8689441 261.594789,92.2609492 262.5,92.2609492 C263.405211,92.2609492 264.197566,92.8689441 264.431852,93.7433111 C264.666138,94.6176781 264.283936,95.5403943 263.5,95.993 L262.535,95.993 C263.318936,96.4456057 263.701138,97.3683219 263.466852,98.2426889 C263.232566,99.1170559 262.440211,99.7250508 261.535,99.7250508 C260.629789,99.7250508 259.837434,99.1170559 259.603148,98.2426889 C259.368862,97.3683219 259.751064,96.4456057 260.535,95.993 L260.535,53.043 Z"></path>
+                </g>
+                <g transform="translate(16.074000, 12.444000)">
+                    <g id="k-link" fill="#EDF3F8" fill-rule="nonzero">
+                        <path d="M93.602,0 L19.196,0 C8.09,0 0,7.563 0,17.441 L0,439.831 C0,452.711 12.502,464.123 26.64,464.123 L205.972,464.123 C219.59,464.123 232.612,452.623 232.612,439.831 L232.612,18.583 C232.612,6.743 223.822,0.07 213.416,0 L137.83,0 C137.543,0.047 132.351,2.182 130.157,7.563 C127.962,12.945 123.547,17.235 118.712,17.235 L113.097,17.235 C110.799,17.235 104.749,15.005 101.686,7.563 C98.623,0.121 93.888,0.047 93.602,0 Z" id="k"></path>
+                    </g>
+                    <g id="Clipped">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <g id="k"></g>
+                        <g id="Group" mask="url(#mask-5)">
+                            <g transform="translate(14.000000, 160.000000)">
+                                <g transform="translate(0.926000, 0.556000)">
+                                    <g id="n-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="n" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                    <g id="n-link" fill="#FBFCFE" fill-rule="nonzero">
+                                        <rect id="n" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                </g>
+                                <g transform="translate(16.000000, 10.000000)" font-family="Helvetica" font-weight="normal">
+                                    <g opacity="0.7" transform="translate(0.926000, 0.556000)" fill="#36536B" fill-rule="nonzero" font-size="10" id="Item-#001">
+                                        <text>
+                                            <tspan x="0" y="10">Item #001</tspan>
+                                        </text>
+                                    </g>
+                                    <g transform="translate(146.926000, 1.556000)" fill="#36536B" fill-rule="nonzero" font-size="13" id="$29">
+                                        <text>
+                                            <tspan x="0.631" y="13">$29</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.926000, 48.556000)">
+                                    <g id="p-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="p" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                    <g id="p-link" fill="#FBFCFE" fill-rule="nonzero">
+                                        <rect id="p" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                </g>
+                                <g transform="translate(16.000000, 58.000000)" font-family="Helvetica" font-weight="normal">
+                                    <g opacity="0.7" transform="translate(0.926000, 0.556000)" fill="#36536B" fill-rule="nonzero" font-size="10" id="Item-#002">
+                                        <text>
+                                            <tspan x="0" y="10">Item #002</tspan>
+                                        </text>
+                                    </g>
+                                    <g transform="translate(140.926000, 1.556000)" fill="#36536B" fill-rule="nonzero" font-size="13" id="$105">
+                                        <text>
+                                            <tspan x="0.836" y="13">$105</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.926000, 96.556000)">
+                                    <g id="r-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="r" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                    <g id="r-link" fill="#FBFCFE" fill-rule="nonzero">
+                                        <rect id="r" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                </g>
+                                <g transform="translate(16.000000, 106.000000)" font-family="Helvetica" font-weight="normal">
+                                    <g opacity="0.7" transform="translate(0.926000, 0.556000)" fill="#36536B" fill-rule="nonzero" font-size="10" id="Item-#003">
+                                        <text>
+                                            <tspan x="0" y="10">Item #003</tspan>
+                                        </text>
+                                    </g>
+                                    <g transform="translate(140.926000, 1.556000)" fill="#36536B" fill-rule="nonzero" font-size="13" id="$810">
+                                        <text>
+                                            <tspan x="0.888" y="13">$810</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.926000, 144.556000)">
+                                    <g id="t-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="t" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                    <g id="t-link" fill="#FBFCFE" fill-rule="nonzero">
+                                        <rect id="t" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                    </g>
+                                </g>
+                                <g transform="translate(16.000000, 154.000000)" font-family="Helvetica" font-weight="normal">
+                                    <g opacity="0.7" transform="translate(0.926000, 0.556000)" fill="#36536B" fill-rule="nonzero" font-size="10" id="Item-#004">
+                                        <text>
+                                            <tspan x="0" y="10">Item #004</tspan>
+                                        </text>
+                                    </g>
+                                    <g transform="translate(132.926000, 1.556000)" fill="#36536B" fill-rule="nonzero" font-size="13" id="$1044">
+                                        <text>
+                                            <tspan x="0.701" y="13">$1044</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.000000, 192.000000)">
+                                    <g transform="translate(0.926000, 0.556000)" fill-rule="nonzero" id="v-link">
+                                        <g fill="#000000">
+                                            <rect id="v" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                        <g fill="#FBFCFE">
+                                            <rect id="v" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(16.000000, 10.000000)" fill="#36536B" fill-rule="nonzero" font-family="Helvetica" font-weight="normal">
+                                        <g opacity="0.7" transform="translate(0.926000, 0.556000)" font-size="10" id="Item-#005">
+                                            <text>
+                                                <tspan x="0" y="10">Item #005</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="translate(146.926000, 1.556000)" font-size="13" id="$40">
+                                            <text>
+                                                <tspan x="0.547" y="13">$40</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.000000, 240.000000)">
+                                    <g transform="translate(0.926000, 0.556000)" fill-rule="nonzero" id="x-link">
+                                        <g fill="#000000">
+                                            <rect id="x" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                        <g fill="#FBFCFE">
+                                            <rect id="x" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(16.000000, 10.000000)" fill="#36536B" fill-rule="nonzero" font-family="Helvetica" font-weight="normal">
+                                        <g opacity="0.7" transform="translate(0.926000, 0.556000)" font-size="10" id="Item-#006">
+                                            <text>
+                                                <tspan x="0" y="10">Item #006</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="translate(129.926000, 1.556000)" font-size="13" id="$2566">
+                                            <text>
+                                                <tspan x="0.489" y="13">$2566</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </g>
+                                <g transform="translate(0.000000, 288.000000)">
+                                    <g transform="translate(0.926000, 0.556000)" fill-rule="nonzero" id="z-link">
+                                        <g fill="#000000">
+                                            <rect id="z" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                        <g fill="#FBFCFE">
+                                            <rect id="z" x="0" y="0" width="204" height="40" rx="5"></rect>
+                                        </g>
+                                    </g>
+                                    <g transform="translate(16.000000, 10.000000)" fill="#36536B" fill-rule="nonzero" font-family="Helvetica" font-weight="normal">
+                                        <g opacity="0.7" transform="translate(0.926000, 0.556000)" font-size="10" id="Item-#001">
+                                            <text>
+                                                <tspan x="0" y="10">Item #001</tspan>
+                                            </text>
+                                        </g>
+                                        <g transform="translate(132.926000, 1.556000)" font-size="13" id="$4199">
+                                            <text>
+                                                <tspan x="0.466" y="13">$4199</tspan>
+                                            </text>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Clipped">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <g id="k"></g>
+                        <polygon id="Path" fill="#36536B" fill-rule="nonzero" mask="url(#mask-7)" points="0 0 233 0 233 114 0 114"></polygon>
+                    </g>
+                    <g id="Clipped">
+                        <mask id="mask-9" fill="white">
+                            <use xlink:href="#path-8"></use>
+                        </mask>
+                        <g id="k"></g>
+                        <g id="Group" mask="url(#mask-9)">
+                            <g transform="translate(14.000000, 80.000000)">
+                                <g transform="translate(0.926000, 0.556000)">
+                                    <g id="B-link" fill="#000000" fill-rule="nonzero">
+                                        <rect id="B" x="0" y="0" width="204" height="56" rx="5"></rect>
+                                    </g>
+                                    <g id="B-link" fill="#FBFCFE" fill-rule="nonzero">
+                                        <rect id="B" x="0" y="0" width="204" height="56" rx="5"></rect>
+                                    </g>
+                                </g>
+                                <g opacity="0.7" transform="translate(16.926000, 18.556000)" font-family="Helvetica" font-size="10" font-weight="normal">
+                                    <text id="Total-payment" fill="#36536B" fill-rule="nonzero">
+                                        <tspan x="0.231" y="10">Total payment</tspan>
+                                    </text>
+                                </g>
+                                <g transform="translate(123.926000, 16.556000)" font-family="Helvetica" font-size="20" font-weight="normal">
+                                    <text id="$9204" fill="#BA4270" fill-rule="nonzero">
+                                        <tspan x="0.339" y="19">$9204</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Clipped">
+                        <mask id="mask-11" fill="white">
+                            <use xlink:href="#path-10"></use>
+                        </mask>
+                        <g id="k"></g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
