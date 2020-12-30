@@ -27,7 +27,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --clr-blue-300: hsl(207, 33%, 32%);
   --clr-blue-500: hsl(207,27%,15%);
   --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
-  --br: 2.2rem;
+  --br: 3rem;
   --spacer: 1.6rem;
   --ff-primary: 'Public Sans', sans-serif;
   --ff-secondary: 'DM Serif Display', serif;
@@ -54,7 +54,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --lh-800: 1.8;
 }
 
-@media (min-width: 24em) {
+@media only screen and (min-width: 56.25em) {
   :root {
     --fs-500: 4.8rem;
     --fs-600: 4.8rem;
@@ -64,7 +64,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-@media (min-width: 48.1em) {
+@media only screen and (min-width: 75em) {
   :root {
     --fs-400: 3.2rem;
     --fs-700: 5.6rem;
@@ -146,17 +146,22 @@ html {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 1rem;
 }
 
 .container > * {
+  background: var(--bg, var(--clr-blue-100));
   color: var(--fg, var(--clr-blue-200));
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
   line-height: var(--lh-800);
   text-align: center;
-  padding: 4rem 14rem;
-  background: var(--bg, var(--clr-blue-100));
+  padding: 4rem 4rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .container > * {
+    padding: 4rem 14rem;
+  }
 }
 
 h1, .h1,
@@ -199,6 +204,7 @@ a {
 p,
 a {
   color: var(--fg, var(--clr-blue-200));
+  font-size: var(--fs, inherit);
 }
 
 .benefit__title {
@@ -304,7 +310,7 @@ a {
 .btn {
   color: var(--fg-btn, var(--clr-neutral-100));
   border-radius: var(--br);
-  padding: 0.5rem 1.5rem;
+  padding: 0.8em 1.5em;
   width: 100%;
   display: block;
   font-weight: var(--fw-700);
@@ -398,10 +404,6 @@ footer .logo {
   display: inline-block;
 }
 
-.header {
-  background: url(../../assets/shared/desktop/bg-pattern-circle) no-repeat;
-}
-
 .nav {
   display: -ms-grid;
   display: grid;
@@ -410,29 +412,84 @@ footer .logo {
   gap: 4rem;
 }
 
-.nav .menu-open-icon,
-.nav .menu-close-icon {
-  display: none;
+.menu-open-icon,
+.menu-close-icon {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
 }
 
-.nav .menu {
+@media only screen and (min-width: 56.25em) {
+  .menu-open-icon,
+  .menu-close-icon {
+    display: none;
+  }
+}
+
+.menu {
+  position: fixed;
+  padding: 5rem;
+  height: 100vh;
   display: -ms-grid;
   display: grid;
-  grid-auto-flow: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  background: var(--clr-blue-500);
+  --fg: var(--clr-neutral-200);
+  top: 0;
+  right: 0;
+  width: 80vw;
+  z-index: 100;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
 }
 
-.nav__list li {
-  display: inline;
+.menu.open {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
-.nav__list li:not(:first-child) {
-  margin-left: 4rem;
+.menu a {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .menu {
+    position: static;
+    grid-auto-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    background: none;
+    height: auto;
+    width: auto;
+    --fg: inherit;
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
+  }
+  .menu a {
+    font-size: inherit;
+  }
+  .menu__list li {
+    display: inline;
+  }
+  .menu__list li:not(:first-child) {
+    margin-left: 4rem;
+  }
+}
+
+ul.menu__list {
+  padding-top: 2rem;
+  border-top: 1px solid var(--clr-neutral-300);
 }
 
 .hero {

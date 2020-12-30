@@ -40,6 +40,7 @@ a {
 p,
 a {
   color: var(--fg, var(--clr-blue-200));
+  font-size: var(--fs, inherit);
 }
 
 .benefit__title {

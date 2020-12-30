@@ -70,15 +70,18 @@ html {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
 }
 
 .container > * {
+  background: var(--bg, var(--clr-blue-100));
   color: var(--fg, var(--clr-blue-200));
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
   line-height: var(--lh-800);
   text-align: center;
-  padding: 4rem 14rem;
-  background: var(--bg, var(--clr-blue-100));
+  padding: 4rem 4rem;
+
+  @include respond(tab-land) {
+    padding: 4rem 14rem;
+  }
 }
