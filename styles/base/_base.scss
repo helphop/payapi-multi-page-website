@@ -72,6 +72,8 @@ html {
   grid-template-columns: 1fr;
 }
 
+
+
 .container > * {
   background: var(--bg, var(--clr-blue-100));
   color: var(--fg, var(--clr-blue-200));
@@ -82,6 +84,11 @@ html {
   padding: 4rem 4rem;
 
   @include respond(tab-land) {
-    padding: 4rem 14rem;
+    padding: 8rem 14rem 8rem 14rem;
   }
+}
+
+.container > :first-child {
+  padding-bottom: 0rem;
+  padding-top: 4rem;
 }
