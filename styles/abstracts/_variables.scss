@@ -15,38 +15,38 @@
   --clr-blue-300: hsl(207, 33%, 32%); //text
   --clr-blue-500: hsl(207,27%,15%); //bg work-with footer
 
-  --box-shadow-100: 25px 25px 80px hsla(207, 33%, 32%, 30%);
+  --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
 
-  --br: 1.4rem;
-  --spacer: 1rem;
+  --br: 2.2rem;
+  --spacer: 1.6rem;
 
   --ff-primary: 'Public Sans', sans-serif;
   --ff-secondary: 'DM Serif Display', serif;
 
-  --fs-100: 0.6875rem; //form-error-messages
-  --fs-200: 0.9375rem; //text
-  --fs-250: 1.25rem; //menu text
-  --fs-300: 1.5rem; //h4
-  --fs-400: 1.5rem; //h3
-  --fs-500: 2rem; //h2 small
-  --fs-600: 2.25rem; //h2 large
-  --fs-700: 2rem; //h1 small
-  --fs-800: 2rem; //h1 large
+  --fs-100: 1.1rem; //form-error-messages
+  --fs-200: 1.5rem; //text
+  --fs-250: 2rem; //menu text
+  --fs-300: 2.4rem; //h4
+  --fs-400: 2.4rem; //h3
+  --fs-500: 3.2rem; //h2 small
+  --fs-600: 3.6rem; //h2 large
+  --fs-700: 3.2rem; //h1 small
+  --fs-800: 3.2rem; //h1 large
 
   //tablet
   @media (min-width: 24em) {
-    --fs-500: 3rem; //h2 small
-    --fs-600: 3rem; //h2 large
-    --fs-700: 3rem; //h1 small
-    --fs-800: 3rem; //h1 large
-    --fs-250: 0.9375rem;
+    --fs-500: 4.8rem; //h2 small
+    --fs-600: 4.8rem; //h2 large
+    --fs-700: 4.8rem; //h1 small
+    --fs-800: 4.8rem; //h1 large
+    --fs-250: 1.5rem;
   }
 
   //desktop
   @media (min-width: 48.1em) {
-    --fs-400: 2rem; //h3
-    --fs-700: 3.5rem; //h1 small
-    --fs-800: 4.5rem; //h1 large
+    --fs-400: 3.2rem; //h3
+    --fs-700: 5.6rem; //h1 small
+    --fs-800: 7.2rem; //h1 large
   }
 
   --fw-100: 100;

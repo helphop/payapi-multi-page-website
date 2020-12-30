@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone is where normal styles apply
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800 is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 :root {
   --opacity-500: 0.5;
   --clr-neutral-100: hsl(220, 60%, 99%);
@@ -9,20 +26,20 @@
   --clr-blue-200: hsl(207, 16%, 50%);
   --clr-blue-300: hsl(207, 33%, 32%);
   --clr-blue-500: hsl(207,27%,15%);
-  --box-shadow-100: 25px 25px 80px hsla(207, 33%, 32%, 30%);
-  --br: 1.4rem;
-  --spacer: 1rem;
+  --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
+  --br: 2.2rem;
+  --spacer: 1.6rem;
   --ff-primary: 'Public Sans', sans-serif;
   --ff-secondary: 'DM Serif Display', serif;
-  --fs-100: 0.6875rem;
-  --fs-200: 0.9375rem;
-  --fs-250: 1.25rem;
-  --fs-300: 1.5rem;
-  --fs-400: 1.5rem;
-  --fs-500: 2rem;
-  --fs-600: 2.25rem;
-  --fs-700: 2rem;
-  --fs-800: 2rem;
+  --fs-100: 1.1rem;
+  --fs-200: 1.5rem;
+  --fs-250: 2rem;
+  --fs-300: 2.4rem;
+  --fs-400: 2.4rem;
+  --fs-500: 3.2rem;
+  --fs-600: 3.6rem;
+  --fs-700: 3.2rem;
+  --fs-800: 3.2rem;
   --fw-100: 100;
   --fw-200: 200;
   --fw-700: 700;
@@ -39,19 +56,19 @@
 
 @media (min-width: 24em) {
   :root {
-    --fs-500: 3rem;
-    --fs-600: 3rem;
-    --fs-700: 3rem;
-    --fs-800: 3rem;
-    --fs-250: 0.9375rem;
+    --fs-500: 4.8rem;
+    --fs-600: 4.8rem;
+    --fs-700: 4.8rem;
+    --fs-800: 4.8rem;
+    --fs-250: 1.5rem;
   }
 }
 
 @media (min-width: 48.1em) {
   :root {
-    --fs-400: 2rem;
-    --fs-700: 3.5rem;
-    --fs-800: 4.5rem;
+    --fs-400: 3.2rem;
+    --fs-700: 5.6rem;
+    --fs-800: 7.2rem;
   }
 }
 
@@ -120,26 +137,86 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: var(--clr-blue-100);
 }
 
 .container {
-  padding: 4rem 2rem;
+  padding: 4rem;
   max-width: 1110px;
   margin: 0 auto;
 }
 
+body {
+  color: var(--fg, var(--clr-blue-200));
+  font-family: var(--ff-primary);
+  font-size: var(--fs-200);
+  line-height: var(--lh-800);
+  text-align: center;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  color: var(--fg, var(--clr-blue-300));
+  line-height: var(--lh-000);
+}
+
+h1, .h1 {
+  font-size: var(--fs-800);
+  font-weight: 100;
+}
+
+h1.sm, .h1.sm {
+  font-size: var(--fs-700);
+}
+
+h2, .h2 {
+  font-size: var(--fs-600);
+}
+
+h2.sm, .h2.sm {
+  font-size: var(--fs-500);
+}
+
+h3, .h3 {
+  font-size: var(--fs-400);
+}
+
+h4, .h4 {
+  font-size: var(--fs-300);
+}
+
+a {
+  font-weight: var(--fw-700);
+}
+
+p,
+a {
+  color: var(--fg, var(--clr-blue-200));
+}
+
+.benefit__title {
+  font-size: var(--fs-250);
+  font-weight: var(--fw-700);
+  color: var(--clr-blue-300);
+}
+
 .flow-content > * + * {
-  margin-top: calc(1.5 * 1rem);
+  margin-top: calc(1.5 * var(--spacer));
 }
 
 .flow-content-small > * + * {
-  margin-top: 0.5rem;
+  margin-top: var(--spacer);
 }
 
 .flow-content-large > * + * {
-  margin-top: calc(3 * 1rem);
+  margin-top: calc(3 * var(--spacer));
 }
 
 .split-auto {
@@ -222,54 +299,6 @@ body {
 .white {
   -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
           filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
-}
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
-  color: var(--fg, var(--clr-blue-300));
-  line-height: var(--lh-000);
-}
-
-h1, .h1 {
-  font-size: var(--fs-800);
-  font-weight: 100;
-}
-
-h1.sm, .h1.sm {
-  font-size: var(--fs-700);
-}
-
-h2, .h2 {
-  font-size: var(--fs-600);
-}
-
-h2.sm, .h2.sm {
-  font-size: var(--fs-500);
-}
-
-h3, .h3 {
-  font-size: var(--fs-400);
-}
-
-h4, .h4 {
-  font-size: var(--fs-300);
-}
-
-a {
-  font-weight: var(--fw-700);
-}
-
-p,
-a {
-  color: var(--fg, var(--clr-blue-200));
-}
-
-.benefit__title {
-  font-size: var(--fs-250);
-  font-weight: var(--fw-700);
-  color: var(--clr-blue-300);
 }
 
 .btn {
@@ -367,4 +396,55 @@ footer {
 footer .logo {
   margin: 0 auto;
   display: inline-block;
+}
+
+.header {
+  background: url(../../assets/shared/desktop/bg-pattern-circle) no-repeat;
+}
+
+.nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  gap: 4rem;
+}
+
+.nav .menu-open-icon,
+.nav .menu-close-icon {
+  display: none;
+}
+
+.nav .menu {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list li {
+  display: inline;
+}
+
+.nav__list li:not(:first-child) {
+  margin-left: 4rem;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55rem auto;
+      grid-template-columns: 55rem auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
 }
