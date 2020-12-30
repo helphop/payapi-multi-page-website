@@ -1,6 +1,7 @@
 .nav {
   display: grid;
   grid-template-columns: auto 1fr;
+  align-items: center;
   gap: 4rem;
 }
 
@@ -9,17 +10,20 @@
     display: block;
     margin-left: auto;
     cursor: pointer;
-    @include respond(tab-land) {
-      display: none;
-    }
+    @include respond(tab-land) {display: none; }
 }
 
-
+.menu__list a {
+  font-size: 2rem;
+  @include respond(tab-land) {
+    font-size: inherit;
+  }
+}
 
 .menu {
     position: fixed;
     padding: 5rem;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     gap: 4rem;
     align-items: center;
@@ -35,28 +39,29 @@
     &.open {
       transform: translateX(0vw);
     }
-   a { font-size: 2rem;}
     @include respond(tab-land) {
       position: static;
        grid-auto-flow: column;
        justify-content: space-between;
        padding: 0;
       background: none;
-      height: auto;
+      min-height: auto;
       width: auto;
       --fg: inherit;
      transform: translateX(0vw);
-      a { font-size: inherit;}
-      &__list {
-        li { display: inline; }
-        li:not(:first-child) { margin-left: 4rem;}
-      }
    }
 }
 
 ul.menu__list {
   padding-top: 2rem;
   border-top: 1px solid var(--clr-neutral-300);
+
+  @include respond(tab-land) {
+    padding: 0;
+    border: none;
+    li { display: inline; }
+    li:not(:first-child) { margin-left: 4rem;}
+  }
 }
 
 .hero {

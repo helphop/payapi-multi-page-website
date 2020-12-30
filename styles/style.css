@@ -54,7 +54,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --lh-800: 1.8;
 }
 
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 56.26em) {
   :root {
     --fs-500: 4.8rem;
     --fs-600: 4.8rem;
@@ -158,7 +158,7 @@ html {
   padding: 4rem 4rem;
 }
 
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 56.26em) {
   .container > * {
     padding: 4rem 14rem;
   }
@@ -409,6 +409,9 @@ footer .logo {
   display: grid;
   -ms-grid-columns: auto 1fr;
       grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4rem;
 }
 
@@ -419,17 +422,27 @@ footer .logo {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 56.26em) {
   .menu-open-icon,
   .menu-close-icon {
     display: none;
   }
 }
 
+.menu__list a {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 56.26em) {
+  .menu__list a {
+    font-size: inherit;
+  }
+}
+
 .menu {
   position: fixed;
   padding: 5rem;
-  height: 100vh;
+  min-height: 100vh;
   display: -ms-grid;
   display: grid;
   gap: 4rem;
@@ -457,11 +470,7 @@ footer .logo {
           transform: translateX(0vw);
 }
 
-.menu a {
-  font-size: 2rem;
-}
-
-@media only screen and (min-width: 56.25em) {
+@media only screen and (min-width: 56.26em) {
   .menu {
     position: static;
     grid-auto-flow: column;
@@ -470,26 +479,30 @@ footer .logo {
             justify-content: space-between;
     padding: 0;
     background: none;
-    height: auto;
+    min-height: auto;
     width: auto;
     --fg: inherit;
     -webkit-transform: translateX(0vw);
             transform: translateX(0vw);
-  }
-  .menu a {
-    font-size: inherit;
-  }
-  .menu__list li {
-    display: inline;
-  }
-  .menu__list li:not(:first-child) {
-    margin-left: 4rem;
   }
 }
 
 ul.menu__list {
   padding-top: 2rem;
   border-top: 1px solid var(--clr-neutral-300);
+}
+
+@media only screen and (min-width: 56.26em) {
+  ul.menu__list {
+    padding: 0;
+    border: none;
+  }
+  ul.menu__list li {
+    display: inline;
+  }
+  ul.menu__list li:not(:first-child) {
+    margin-left: 4rem;
+  }
 }
 
 .hero {
