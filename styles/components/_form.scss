@@ -1,16 +1,22 @@
+
 .input__group {
-  display: grid;
-  gap: 2rem;
+ display: grid;
+  row-gap: 2rem;
+  align-items: center;
 
   @include respond(tab-land) {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      justify-items: center;
-      margin-left: 6rem;
-      & > :last-child { transform: translateX(-6rem); }
+    display: grid;
+    grid-template-columns:  6fr 3.5fr;
+    & > :first-child {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+    & > :last-child {
+      grid-column: 2 / 3;
+      grid-row: 1;
+      z-index: 1;
+    }
   }
-
-  @include respond(desktop) { margin-left: 0; }
 }
 
 input {

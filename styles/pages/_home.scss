@@ -12,7 +12,7 @@
   }
 
  @include respond(desktop) {
-    grid-template-columns: minmax(40rem, 55rem) minmax(200px, auto);
+    grid-template-columns: minmax(40rem, 55rem) minmax(20rem, auto);
    text-align: left;
    justify-content: space-between;
    align-items: center;
