@@ -255,7 +255,7 @@ a {
   grid-auto-flow: row;
 }
 
-@media (min-width: 48.1em) {
+@media only screen and (min-width: 56.26em) {
   .split {
     grid-auto-flow: column;
     grid-auto-columns: auto;
@@ -608,8 +608,8 @@ footer .logo {
 .features {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(36rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
   -webkit-column-gap: 6rem;
           column-gap: 6rem;
@@ -624,7 +624,7 @@ footer .logo {
   grid-row: auto;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 75em) {
   .features {
     text-align: left;
   }
@@ -634,4 +634,12 @@ footer .logo {
     -ms-grid-row: 2;
     grid-row: 2;
   }
+}
+
+.benefits {
+  --gap: 4rem;
+}
+
+.benefits img {
+  display: inline-block;
 }

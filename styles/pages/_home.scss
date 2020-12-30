@@ -55,22 +55,29 @@
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   justify-items: center;
   column-gap: 6rem;
   row-gap: 10rem;
-  align-items: center;
+  align-items: center;;
 
   > :last-child {
     grid-column: auto;
     grid-row: auto;
   }
 
-  @include respond(tab-land) {
+  @include respond(desktop) {
     text-align: left;
     > :last-child {
       grid-column: 1;
       grid-row: 2;
     }
+  }
+}
+
+.benefits {
+  --gap: 4rem;
+  img {
+    display: inline-block;
   }
 }
