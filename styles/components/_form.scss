@@ -1,3 +1,5 @@
+
+
 input {
   background: var(--clr-neutral-100);
   border-radius: var(--br);
@@ -10,4 +12,18 @@ input {
   color: var(--clr-blue-300);
   font-weight: var(--fw-700);
   font-family: var(--ff-primary);
+}
+
+.questions {
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 46.1em) {
+  .input__group {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    & > :last-child {
+      transform: translateX(-6rem);
+    }
+  }
 }

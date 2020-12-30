@@ -13,53 +13,48 @@
   </head>
 
   <body>
-    <header class="bg-circle">
-      <div class="container flow-content">
-        <div class="split-adapt space-bt">
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
           <div class="logo"><img src="assets/shared/desktop/logo.svg" alt="logo"></div>
-          <div class="menu__open"><img  src="assets/shared/mobile/menu.svg" alt="menu icon"></div>
-        </div>
-        <div class="menu bg-circle bg-dark close">
-          <div class="menu__close"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
-          <nav class="split justify-sb">
-            <ul class="menu__list flow-content">
+          <div class="menu-open-icon"><img  src="assets/shared/mobile/menu.svg" alt="menu icon"></div>
+          <div class="menu">
+            <div class="menu-close-icon"><img src="assets/shared/mobile/close.svg" alt="close icon"></div>
+            <ul class="nav__list">
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
-          </nav>
-        </div>
-        <div class="hero flow-content">
-          <div class="hero__img">
-            <img class="drop-shadow" src="assets/home/desktop/illustration-phone-mockup2.svg" />
+              <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
           </div>
-          <div class="hero__text flow-content">
+        </nav>
+        <div class="hero">
+          <div class="hero__text flow-content-large">
             <h1>Start building with our APIs for absolutely free.</h1>
-            <form action="" class="demo" method="post">
-              <div class="input__group split">
+            <form action="" class="demo flow-content-small" method="post">
+              <div class="input__group">
                 <input type="email" class="demo__email" placeholder="Enter email address">
                 <button type="submit" class="btn btn-primary">Schedule a Demo</button>
               </div>
+              <p class="questions">Have any questions? <a href="contact.html">Contact Us</a></p>
             </form>
-            <p>Have any questions? <a href="contact.html">Contact Us</a></p>
           </div>
+          <div class="hero__img"><img class="drop-shadow" src="assets/home/desktop/illustration-phone-mockup.svg" /></div>
         </div>
       </div>
     </header>
 
-    <section class="work bg-dark bg-circle text-center">
-      <div class="container">
-        <div class="work__content flow-content-large">
-          <div class="logos split-auto justify-ic ">
-            <img class="white" src="assets/shared/desktop/tesla.svg" alt="tesla">
+    <section class="work">
+      <div class="container work__content">
+          <div class="logos">
+            <img  class="white" src="assets/shared/desktop/tesla.svg" alt="tesla">
             <img  class="white" src="assets/shared/desktop/microsoft.svg" alt="microsoft">
             <img  class="white" src="assets/shared/desktop/hewlett-packard.svg" alt="hewlett-packard">
             <img  class="white" src="assets/shared/desktop/oracle.svg" alt="oracle">
             <img  class="white" src="assets/shared/desktop/google.svg" alt="google">
             <img  class="white" src="assets/shared/desktop/nvidia.svg" alt="nvidia">
           </div>
-          <div class="work__text flow-content">
+          <div class="work__text">
             <h2 class="sm">Who we work with</h2>
             <p>Today, millions of people around the world have successfully connected
             their accounts to apps they love using our API. We provide developers
@@ -68,56 +63,54 @@
             About Us</p>
           </div>
           <a href="about.html" class="btn btn-dark btn-inline">About Us</a>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="container features">
+          <div class="feature">
+            <div class="feature__img"><img class="drop-shadow" src="assets/home/desktop/illustration-easy-to-implement2.svg" alt="code image"></div>
+            <div class="feature__text">
+              <h2 class="sm">Easy to implement</h2>
+              <p>Our API comes with just a few lines of code. You’ll be up and running in
+              no time. We built our documentation page to integrate payments functionality
+              with ease.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature__img"><img class="drop-shadow" src="assets/home/desktop/illustration-simple-ui2.svg" alt="phone images"></div>
+            <div class="feature__text flow-content">
+              <h2 class="sm">Simple UI & UX</h2>
+              <p>Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-    </section>
-    <section class="highlights">
-      <div class="container flow-content-large">
-        <div class="features flow-content-large">
-          <div class="feature flow-content-large">
-            <div class="features__img">
-              <img class="drop-shadow" src="assets/home/desktop/illustration-easy-to-implement2.svg" alt="code image">
-            </div>
-            <div class="features__text flow-content">
-            <h2 class="sm">Easy to implement</h2>
-            <p>Our API comes with just a few lines of code. You’ll be up and running in
-            no time. We built our documentation page to integrate payments functionality
-            with ease.</p>
-            </div>
-          </div>
-          <div class="feature flow-content-large">
-            <div class="features__img">
-              <img class="drop-shadow" src="assets/home/desktop/illustration-simple-ui2.svg" alt="phone images">
-            </div>
-            <div class="features__text flow-content">
-                <h2 class="sm">Simple UI & UX</h2>
-                <p>Our pre-built form is easy to integrate in your app or website’s checkout
-                flow and designed to optimize conversion.</p>
-            </div>
-          </div>
-        </div>
-        <div class="benefits split-auto">
-          <div class="benefit flow-content">
-            <img src="assets/home/desktop/icon-personal-finances.svg" alt="money bag">
+      <div class="container benefits">
+          <div class="benefit">
+            <div class="benefit__img"><img src="assets/home/desktop/icon-personal-finances.svg" alt="money bag"></div>
             <p class="benefit__title">Personal Finances</p>
             <p>Consolidate financial data from multiple sources and categorize transactions up to
             2 years of history. Analyze reports to reconcile activities in your account.</p>
           </div>
-          <div class="benefit flow-content">
-            <img src="assets/home/desktop/icon-banking-and-coverage.svg" alt="bank">
+
+          <div class="benefit">
+            <div class="benefit__img"> <img src="assets/home/desktop/icon-banking-and-coverage.svg" alt="bank"></div>
             <p class="benefit__title">Banking & Coverage</p>
             <p>With our platform, you can speed up account onboarding and support ongoing payments
             for checking, savings, credit card, and brokerage accounts.</p>
           </div>
-          <div class="benefit flow-content">
-            <img src="assets/home/desktop/icon-consumer-payments.svg" alt="consumer payments">
+
+          <div class="benefit">
+            <div class="benefit__img"> <img src="assets/home/desktop/icon-consumer-payments.svg" alt="consumer payments"></div>
             <p class="benefit__title">Consumer Payments</p>
             <p>It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers
             could instantly authenticate their account.</p>
           </div>
         </div>
-        <div class="cta flow-content">
+
+        <div class="container cta">
           <h2>Ready to start?</h2>
           <form action="" class="demo" method="post">
             <div class="input__group flow-content">
@@ -128,16 +121,17 @@
         </div>
       </div>
     </section>
-    <footer class="bg-dark bg-circle">
+
+    <footer class="bg-dark">
       <div class="container">
-        <nav>
+        <nav class="nav">
           <div class="logo white"><img src="assets/shared/desktop/logo.svg" alt="logo"></div>
-          <ul class="menu__list flow-content">
+          <ul class="nav__list">
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
-          <div class="social split-adapt justify-cc">
+          <div class="social">
             <a href="facebook.com"><img src="assets/shared/desktop/facebook.svg" alt="facebook"></a>
             <a href="twitter.com"><img src="assets/shared/desktop/twitter.svg" alt="twitter"></a>
             <a href="linkedin.com"><img src="assets/shared/desktop/linkedin.svg" alt="linkedin"></a>
@@ -145,6 +139,6 @@
         </nav>
       </div>
     </footer>
-  </body>
 
+  </body>
 </html>

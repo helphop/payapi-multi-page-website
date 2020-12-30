@@ -1,19 +1,32 @@
-.hero {
-  text-align: center;
-}
-.hero__img {
-width: 30%;
- margin: 0 auto;
- filter: drop-shadow(var(--box-shadow-100));
+.header {
+  background: url(../../assets/shared/desktop/bg-pattern-circle) no-repeat;
 }
 
+.nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4rem;
 
-.benefits {
-  --min: 300px;
-}
+  .menu-open-icon,
+  .menu-close-icon {display: none;}
 
-.benefit {
-  img {
-    margin: 0 auto;
+  .menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  &__list {
+    li { display: inline; }
+    li:not(:first-child) { margin-left: 4rem;}
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 55rem auto;
+  justify-content: space-between;
+  align-items: center;
+ text-align: left;
 }
