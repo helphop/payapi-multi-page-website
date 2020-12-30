@@ -552,6 +552,6 @@ footer .logo {
   }
   .hero__img {
     grid-row: auto;
-    width: 80%;
+    width: auto;
   }
 }
