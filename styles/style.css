@@ -604,3 +604,34 @@ footer .logo {
     grid-row: auto;
   }
 }
+
+.features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(36rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  justify-items: center;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
+  row-gap: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features > :last-child {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+@media only screen and (min-width: 56.26em) {
+  .features {
+    text-align: left;
+  }
+  .features > :last-child {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
