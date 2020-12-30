@@ -1,9 +1,26 @@
-
 .hero {
   display: grid;
-  grid-template-columns: 55rem auto;
-  justify-content: space-between;
-  align-items: center;
- text-align: left;
+  row-gap: 4rem;
+  grid-template-columns: minmax(auto, 55rem);
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__img {
+    grid-row: 1;
+    width: 50%;
+  }
+
+
+ @include respond(desktop) {
+    grid-template-columns: minmax(40rem, 55rem) minmax(200px, auto);
+   text-align: left;
+   justify-content: space-between;
+   align-items: center;
+   &__img {
+     grid-row: auto;
+    width: 80%;
+    }
+ }
 }
 
