@@ -160,8 +160,13 @@ html {
 
 @media only screen and (min-width: 56.26em) {
   .container > * {
-    padding: 4rem 14rem;
+    padding: 8rem 14rem 8rem 14rem;
   }
+}
+
+.container > :first-child {
+  padding-bottom: 0rem;
+  padding-top: 4rem;
 }
 
 h1, .h1,
@@ -214,7 +219,7 @@ a {
 }
 
 .flow-content > * + * {
-  margin-top: calc(1.5 * var(--spacer));
+  margin-top: calc(2 * var(--spacer));
 }
 
 .flow-content-small > * + * {
@@ -228,10 +233,11 @@ a {
 .split-auto {
   display: -ms-grid;
   display: grid;
-  gap: var(--gap, 2rem);
-  -ms-grid-columns: (minmax(var(--min, min-content), 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(var(--min, -webkit-min-content), 1fr));
-      grid-template-columns: repeat(auto-fit, minmax(var(--min, min-content), 1fr));
+  row-gap: var(--row-gap, 2rem);
+  -webkit-column-gap: var(--column-gap, 2rem);
+          column-gap: var(--column-gap, 2rem);
+  -ms-grid-columns: (minmax(var(--min), 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
 }
 
 .split-adapt {
@@ -310,7 +316,7 @@ a {
 .btn {
   color: var(--fg-btn, var(--clr-neutral-100));
   border-radius: var(--br);
-  padding: 0.8em 1.5em;
+  padding: 0.8em 2em;
   width: 100%;
   display: block;
   font-weight: var(--fw-700);
@@ -401,12 +407,6 @@ input {
 
 .questions {
   margin-left: 1.5rem;
-}
-
-.logos {
-  --min: 135px;
-  max-width: 36rem;
-  margin: 0 auto;
 }
 
 .nav {
@@ -553,5 +553,54 @@ footer .logo {
   .hero__img {
     grid-row: auto;
     width: auto;
+  }
+}
+
+.work {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(40rem, 60rem);
+      grid-template-columns: minmax(40rem, 60rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  row-gap: 6rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .work {
+    -ms-grid-columns: minmax(auto, 45rem) minmax(20rem, 55rem);
+        grid-template-columns: minmax(auto, 45rem) minmax(20rem, 55rem);
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.logos {
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 3rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+@media only screen and (min-width: 75em) {
+  .logos {
+    grid-row: auto;
   }
 }

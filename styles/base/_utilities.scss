@@ -1,5 +1,5 @@
 .flow-content > * + * {
-  margin-top: calc(1.5 * var(--spacer));
+  margin-top: calc(2 * var(--spacer));
 }
 
 .flow-content-small > * + * {
@@ -12,8 +12,9 @@
 
 .split-auto {
   display: grid;
-  gap: var(--gap, 2rem);
-  grid-template-columns: repeat(auto-fit, minmax(var(--min, min-content), 1fr));
+  row-gap: var(--row-gap, 2rem);
+  column-gap: var(--column-gap, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(var(--min), 1fr));
 }
 
 .split-adapt {
