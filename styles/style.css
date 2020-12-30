@@ -141,22 +141,22 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background: var(--clr-blue-100);
-}
-
 .container {
-  padding: 4rem;
-  max-width: 1110px;
-  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-body {
+.container > * {
   color: var(--fg, var(--clr-blue-200));
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
   line-height: var(--lh-800);
   text-align: center;
+  padding: 4rem 14rem;
+  background: var(--bg, var(--clr-blue-100));
 }
 
 h1, .h1,
