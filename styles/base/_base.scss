@@ -67,12 +67,21 @@ html {
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
 
-body {
-  background: var(--clr-blue-100);
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.container {
-  padding: 4rem;
-  max-width: 1110px;
-  margin: 0 auto;
+.container > * {
+  background: var(--bg, var(--clr-blue-100));
+  color: var(--fg, var(--clr-blue-200));
+  font-family: var(--ff-primary);
+  font-size: var(--fs-200);
+  line-height: var(--lh-800);
+  text-align: center;
+  padding: 4rem 4rem;
+
+  @include respond(tab-land) {
+    padding: 4rem 14rem;
+  }
 }

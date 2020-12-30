@@ -1,10 +1,10 @@
-const close_btn = document.querySelector('.menu__close');
-const open_btn = document.querySelector('.menu__open');
+const close_btn= document.querySelector('.menu-close-icon');
+const open_btn = document.querySelector('.menu-open-icon');
 const menu = document.querySelector('.menu');
 
-close_btn.addEventListener('click', toggleClose)
-open_btn.addEventListener('click', toggleClose)
+close_btn.addEventListener('click', toggleOpen)
+open_btn.addEventListener('click', toggleOpen)
 
-function toggleClose() {
-  menu.classList.toggle('close');
+function toggleOpen() {
+  menu.classList.toggle('open');
 }

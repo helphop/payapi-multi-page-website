@@ -1,6 +1,5 @@
 :root {
 
-
   --opacity-500: 0.5; //disabled buttons
 
   --clr-neutral-100: hsl(220, 60%, 99%); //form fields
@@ -17,7 +16,7 @@
 
   --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
 
-  --br: 2.2rem;
+  --br: 3rem;
   --spacer: 1.6rem;
 
   --ff-primary: 'Public Sans', sans-serif;
@@ -34,7 +33,7 @@
   --fs-800: 3.2rem; //h1 large
 
   //tablet
-  @media (min-width: 24em) {
+  @include respond (tab-land) {
     --fs-500: 4.8rem; //h2 small
     --fs-600: 4.8rem; //h2 large
     --fs-700: 4.8rem; //h1 small
@@ -43,7 +42,7 @@
   }
 
   //desktop
-  @media (min-width: 48.1em) {
+  @include respond(desktop) {
     --fs-400: 3.2rem; //h3
     --fs-700: 5.6rem; //h1 small
     --fs-800: 7.2rem; //h1 large
