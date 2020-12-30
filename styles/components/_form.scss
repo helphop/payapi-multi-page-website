@@ -1,9 +1,22 @@
+.input__group {
+  display: grid;
+  gap: 2rem;
 
+  @include respond(tab-land) {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      justify-items: center;
+      margin-left: 6rem;
+      & > :last-child { transform: translateX(-6rem); }
+  }
+
+  @include respond(desktop) { margin-left: 0; }
+}
 
 input {
   background: var(--clr-neutral-100);
   border-radius: var(--br);
-  padding: 0.5rem 1.5rem;
+  padding: 0.75em 1.5em;
   width: 100%;
   box-shadow: var(--box-shadow-100);
 }
@@ -18,12 +31,3 @@ input {
   margin-left: 1.5rem;
 }
 
-@media (min-width: 46.1em) {
-  .input__group {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    & > :last-child {
-      transform: translateX(-6rem);
-    }
-  }
-}

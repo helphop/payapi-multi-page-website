@@ -339,10 +339,37 @@ a {
   width: auto;
 }
 
+.input__group {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+@media only screen and (min-width: 56.26em) {
+  .input__group {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
+    justify-items: center;
+    margin-left: 6rem;
+  }
+  .input__group > :last-child {
+    -webkit-transform: translateX(-6rem);
+            transform: translateX(-6rem);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .input__group {
+    margin-left: 0;
+  }
+}
+
 input {
   background: var(--clr-neutral-100);
   border-radius: var(--br);
-  padding: 0.5rem 1.5rem;
+  padding: 0.75em 1.5em;
   width: 100%;
   -webkit-box-shadow: var(--box-shadow-100);
           box-shadow: var(--box-shadow-100);
@@ -376,32 +403,10 @@ input {
   margin-left: 1.5rem;
 }
 
-@media (min-width: 46.1em) {
-  .input__group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr auto;
-        grid-template-columns: 1fr auto;
-  }
-  .input__group > :last-child {
-    -webkit-transform: translateX(-6rem);
-            transform: translateX(-6rem);
-  }
-}
-
 .logos {
   --min: 135px;
   max-width: 36rem;
   margin: 0 auto;
-}
-
-footer {
-  background: var(--bg);
-}
-
-footer .logo {
-  margin: 0 auto;
-  display: inline-block;
 }
 
 .nav {
@@ -505,16 +510,48 @@ ul.menu__list {
   }
 }
 
+footer {
+  background: var(--bg);
+}
+
+footer .logo {
+  margin: 0 auto;
+  display: inline-block;
+}
+
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 55rem auto;
-      grid-template-columns: 55rem auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
+  row-gap: 4rem;
+  -ms-grid-columns: minmax(auto, 55rem);
+      grid-template-columns: minmax(auto, 55rem);
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.hero__img {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  width: 50%;
+}
+
+@media only screen and (min-width: 75em) {
+  .hero {
+    -ms-grid-columns: minmax(40rem, 55rem) minmax(200px, auto);
+        grid-template-columns: minmax(40rem, 55rem) minmax(200px, auto);
+    text-align: left;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__img {
+    grid-row: auto;
+    width: 80%;
+  }
 }
