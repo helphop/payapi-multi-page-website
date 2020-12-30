@@ -23,8 +23,6 @@
   grid-auto-flow: column;
 }
 
-
-
 .split {
  display: grid;
   gap: var(--gap, 1rem);
@@ -32,7 +30,7 @@
   grid-auto-flow: row;
 }
 
-@media (min-width: 48.1em) {
+@include respond(tab-land) {
   .split {
     grid-auto-flow: column;
     grid-auto-columns: auto;
