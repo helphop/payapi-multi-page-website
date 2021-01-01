@@ -84,7 +84,7 @@ html {
   padding: 4rem 4rem;
 
   @include respond(tab-land) {
-    padding: 8rem 14rem 8rem 14rem;
+    padding: 8rem 14rem;
   }
 }
 
