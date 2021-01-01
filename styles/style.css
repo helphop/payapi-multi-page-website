@@ -356,8 +356,8 @@ a {
 form.demo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 44.5rem;
-      grid-template-columns: 44.5rem;
+  -ms-grid-columns: minmax(auto, 44.5rem);
+      grid-template-columns: minmax(auto, 44.5rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -461,20 +461,32 @@ input {
   }
 }
 
-.menu--main {
-  position: fixed;
-  padding: 5rem;
-  min-height: 100vh;
+.menu {
   display: -ms-grid;
   display: grid;
   gap: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  --fg: var(--clr-neutral-200);
+}
+
+@media only screen and (min-width: 56.26em) {
+  .menu {
+    grid-auto-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu--main {
+  position: fixed;
+  padding: 5rem;
+  min-height: 100vh;
   -ms-flex-line-pack: start;
       align-content: start;
   background: var(--clr-blue-500);
-  --fg: var(--clr-neutral-200);
   top: 0;
   right: 0;
   width: 80vw;
@@ -495,10 +507,6 @@ input {
 @media only screen and (min-width: 56.26em) {
   .menu--main {
     position: static;
-    grid-auto-flow: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     padding: 0;
     background: none;
     min-height: auto;
@@ -540,6 +548,12 @@ footer .nav {
     -ms-grid-columns: auto 1fr;
         grid-template-columns: auto 1fr;
   }
+}
+
+footer .split-adapt {
+  --gap: 4rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 footer {

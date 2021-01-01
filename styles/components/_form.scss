@@ -1,6 +1,6 @@
 form.demo {
   display: grid;
-  grid-template-columns: 44.5rem;
+  grid-template-columns: minmax(auto, 44.5rem);
   justify-content: center;
   @include respond(desktop) {justify-content: start;}
 }

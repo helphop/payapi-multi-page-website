@@ -13,18 +13,24 @@
     @include respond(tab-land) {display: none; }
 }
 
+.menu {
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+    --fg: var(--clr-neutral-200);
+    @include respond(tab-land) {
+       grid-auto-flow: column;
+       justify-content: space-between;
+    }
+}
 
 
 .menu--main {
     position: fixed;
     padding: 5rem;
     min-height: 100vh;
-    display: grid;
-    gap: 4rem;
-    align-items: center;
     align-content: start;
     background: var(--clr-blue-500);
-    --fg: var(--clr-neutral-200);
     top: 0;
     right: 0;
     width: 80vw;
@@ -36,8 +42,6 @@
     }
     @include respond(tab-land) {
       position: static;
-       grid-auto-flow: column;
-       justify-content: space-between;
        padding: 0;
       background: none;
       min-height: auto;
@@ -55,13 +59,14 @@ ul.menu__list {
 }
 
 .menu--main .menu__list {
-    padding-top: 2rem;
-    border-top: 1px solid var(--clr-neutral-300);
-    @include respond(tab-land) {
-    padding: 0;
-    border: none;
-    }
+  padding-top: 2rem;
+  border-top: 1px solid var(--clr-neutral-300);
+  @include respond(tab-land) {
+  padding: 0;
+  border: none;
+  }
 }
+
 
 
 footer .nav {
@@ -69,4 +74,9 @@ footer .nav {
     @include respond(tab-land) {
       grid-template-columns: auto 1fr;
     }
+}
+
+footer .split-adapt {
+  --gap: 4rem;
+  justify-self: center;
 }
