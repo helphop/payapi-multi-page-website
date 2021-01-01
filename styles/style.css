@@ -142,6 +142,8 @@ html {
 }
 
 .container {
+  max-width: 144rem;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -159,6 +161,12 @@ html {
 }
 
 @media only screen and (min-width: 56.26em) {
+  .container > * {
+    padding: 8rem 8rem;
+  }
+}
+
+@media only screen and (min-width: 75em) {
   .container > * {
     padding: 8rem 14rem;
   }
