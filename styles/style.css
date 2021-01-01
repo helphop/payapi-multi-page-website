@@ -160,7 +160,7 @@ html {
 
 @media only screen and (min-width: 56.26em) {
   .container > * {
-    padding: 8rem 14rem 8rem 14rem;
+    padding: 8rem 14rem;
   }
 }
 
@@ -345,21 +345,34 @@ a {
   width: auto;
 }
 
+form.demo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 44.5rem;
+      grid-template-columns: 44.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 75em) {
+  form.demo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
 .input__group {
   display: -ms-grid;
   display: grid;
   row-gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media only screen and (min-width: 56.26em) {
   .input__group {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 6fr 3.5fr;
-        grid-template-columns: 6fr 3.5fr;
+    -ms-grid-columns: 2.1fr 1.5fr;
+        grid-template-columns: 2.1fr 1.5fr;
   }
   .input__group > :first-child {
     -ms-grid-column: 1;
@@ -523,6 +536,10 @@ footer {
 footer .logo {
   margin: 0 auto;
   display: inline-block;
+}
+
+.social {
+  --gap: 3rem;
 }
 
 .hero {
