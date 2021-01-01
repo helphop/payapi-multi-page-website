@@ -21,7 +21,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         @media only screen and (min-width: 37.5em) { @content };    //600px
     }
     @if $breakpoint == tab-land {
-        @media only screen and (min-width: 56.26em) { @content };     //900px
+        @media only screen and (min-width: 48.1em) { @content };     //900px
     }
     @if $breakpoint == desktop {
         @media only screen and (min-width: 75em) { @content };    //1200px
