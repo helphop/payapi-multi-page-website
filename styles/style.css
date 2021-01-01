@@ -54,7 +54,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --lh-800: 1.8;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   :root {
     --fs-500: 4.8rem;
     --fs-600: 4.8rem;
@@ -160,12 +160,6 @@ html {
   padding: 4rem 4rem;
 }
 
-@media only screen and (min-width: 56.26em) {
-  .container > * {
-    padding: 8rem 8rem;
-  }
-}
-
 @media only screen and (min-width: 75em) {
   .container > * {
     padding: 8rem 14rem;
@@ -263,7 +257,7 @@ a {
   grid-auto-flow: row;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .split {
     grid-auto-flow: column;
     grid-auto-columns: auto;
@@ -377,7 +371,7 @@ form.demo {
   row-gap: 2rem;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .input__group {
     -ms-grid-columns: 2.1fr 1.5fr;
         grid-template-columns: 2.1fr 1.5fr;
@@ -454,7 +448,7 @@ input {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .menu-open-icon,
   .menu-close-icon {
     display: none;
@@ -471,7 +465,7 @@ input {
   --fg: var(--clr-neutral-200);
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .menu {
     grid-auto-flow: column;
     -webkit-box-pack: justify;
@@ -504,7 +498,7 @@ input {
           transform: translateX(0vw);
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .menu--main {
     position: static;
     padding: 0;
@@ -517,7 +511,7 @@ input {
   }
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   ul.menu__list li {
     display: inline;
   }
@@ -531,7 +525,7 @@ input {
   border-top: 1px solid var(--clr-neutral-300);
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   .menu--main .menu__list {
     padding: 0;
     border: none;
@@ -543,7 +537,7 @@ footer .nav {
       grid-template-columns: 1fr;
 }
 
-@media only screen and (min-width: 56.26em) {
+@media only screen and (min-width: 48.1em) {
   footer .nav {
     -ms-grid-columns: auto 1fr;
         grid-template-columns: auto 1fr;
@@ -609,8 +603,8 @@ footer .logo {
 .work {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(40rem, 60rem);
-      grid-template-columns: minmax(40rem, 60rem);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -645,8 +639,15 @@ footer .logo {
   row-gap: 3rem;
   -webkit-column-gap: 3rem;
           column-gap: 3rem;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (min-width: 48.1em) {
+  .logos {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media only screen and (min-width: 75em) {
@@ -658,12 +659,12 @@ footer .logo {
 .features {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   justify-items: center;
-  -webkit-column-gap: 6rem;
-          column-gap: 6rem;
-  row-gap: 10rem;
+  -webkit-column-gap: 5rem;
+          column-gap: 5rem;
+  row-gap: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -676,6 +677,8 @@ footer .logo {
 
 @media only screen and (min-width: 75em) {
   .features {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     text-align: left;
   }
   .features > :last-child {
@@ -695,5 +698,16 @@ footer .logo {
 }
 
 .cta {
-  --gap: 4rem;
+  gap: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 75em) {
+  .cta {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
 }
