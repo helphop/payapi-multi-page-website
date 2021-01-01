@@ -674,3 +674,7 @@ footer .logo {
 .benefits img {
   display: inline-block;
 }
+
+.cta {
+  --gap: 4rem;
+}
