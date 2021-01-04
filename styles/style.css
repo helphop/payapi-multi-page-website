@@ -584,6 +584,9 @@ input {
 footer .nav {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 48.1em) {

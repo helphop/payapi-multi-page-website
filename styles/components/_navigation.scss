@@ -46,7 +46,6 @@
     }
 }
 
-
 .menu__background {
   position: fixed;
   content: '';
@@ -107,6 +106,7 @@ ul.menu__list {
 
 footer .nav {
     grid-template-columns: 1fr;
+    align-items: center;
     @include respond(tab-land) {
       grid-template-columns: auto 1fr;
     }
