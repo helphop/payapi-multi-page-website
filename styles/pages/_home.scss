@@ -1,3 +1,4 @@
+
 .hero {
   display: grid;
   row-gap: 4rem;
@@ -24,6 +25,15 @@
 }
 
 .work {
+
+   background-position: left 50% top -400px;
+   @include respond(tab-land) {
+   background-position: left 50% bottom -40%;
+   }
+  @include respond(desktop) {
+   background-size: 70%;
+   background-position: -90% 105%;
+   }
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -85,3 +95,12 @@
   @include respond(desktop) { grid-template-columns: repeat(2, auto);}
 }
 
+
+footer.bg-circle {
+ background-position: center top -18%;
+ background-size: 200%;
+ @include respond(tab-land) {
+  background-position: 50vw 20%;
+  background-size: 70%;
+ }
+}

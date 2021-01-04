@@ -77,7 +77,7 @@ html {
 }
 
 .container > * {
-  background: var(--bg, var(--clr-blue-100));
+  background-color: var(--bg, var(--clr-blue-100));
   color: var(--fg, var(--clr-blue-200));
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
@@ -90,5 +90,10 @@ html {
 .container > :first-child {
   padding-bottom: 0rem;
   padding-top: 4rem;
+}
+
+.container > :last-child {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 

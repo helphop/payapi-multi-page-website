@@ -58,15 +58,7 @@
   --fg: var(--clr-neutral-200);
 }
 
-.bg-circle {
-  background: url(../../assets/shared/desktop/bg-pattern-circle.svg) no-repeat, var(--bg, var(--clr-blue-100));
-  background-position: center -510px;
-  background-size: 700px;
-}
 
-.bg-circle-bottom {
-  background-position: center 200px;
-}
 
 .text-center {
   text-align: center;
@@ -78,4 +70,10 @@
 
 .white {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
+}
+
+.bg-circle {
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
