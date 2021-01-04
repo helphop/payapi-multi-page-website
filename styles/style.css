@@ -148,6 +148,8 @@ html {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  overflow: hidden;
+  position: relative;
 }
 
 .container > * {
@@ -441,6 +443,37 @@ input {
   gap: 4rem;
 }
 
+.nav > *,
+.header > * {
+  z-index: 51;
+}
+
+.circle_container {
+  position: absolute;
+  width: 100%;
+  z-index: 48;
+  -webkit-transform: scale(1.1) translate(-30px, -20%);
+          transform: scale(1.1) translate(-30px, -20%);
+}
+
+@media only screen and (min-width: 48.1em) {
+  .circle_container {
+    -webkit-transform: scale(1.1) translate(-40px, -20%);
+            transform: scale(1.1) translate(-40px, -20%);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .circle_container {
+    -webkit-transform: scale(0.6) translate(45%, 10%);
+            transform: scale(0.6) translate(45%, 10%);
+  }
+}
+
+.circle_container.raised {
+  z-index: 53;
+}
+
 .menu-open-icon,
 .menu-close-icon {
   display: block;
@@ -474,28 +507,43 @@ input {
   }
 }
 
+.menu__background {
+  position: fixed;
+  content: '';
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  z-index: 52;
+  background: var(--clr-blue-500);
+}
+
+.menu__background,
+.menu--main {
+  -webkit-transition: -webkit-transform .6s ease-in-out;
+  transition: -webkit-transform .6s ease-in-out;
+  transition: transform .6s ease-in-out;
+  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+}
+
+.menu__background.open,
+.menu--main.open {
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
+}
+
 .menu--main {
   position: fixed;
   padding: 5rem;
   min-height: 100vh;
   -ms-flex-line-pack: start;
       align-content: start;
-  background: var(--clr-blue-500);
   top: 0;
   right: 0;
   width: 80vw;
-  z-index: 100;
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  -webkit-transition: -webkit-transform .6s ease-in-out;
-  transition: -webkit-transform .6s ease-in-out;
-  transition: transform .6s ease-in-out;
-  transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
-}
-
-.menu--main.open {
-  -webkit-transform: translateX(0vw);
-          transform: translateX(0vw);
+  z-index: 300;
 }
 
 @media only screen and (min-width: 48.1em) {
@@ -523,6 +571,7 @@ input {
 .menu--main .menu__list {
   padding-top: 2rem;
   border-top: 1px solid var(--clr-neutral-300);
+  font-size: var(--fs-250);
 }
 
 @media only screen and (min-width: 48.1em) {
@@ -580,6 +629,7 @@ footer .logo {
   -ms-grid-row: 1;
   grid-row: 1;
   width: 50%;
+  z-index: 50;
 }
 
 @media only screen and (min-width: 75em) {

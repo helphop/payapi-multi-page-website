@@ -1,9 +1,31 @@
+//need to refactor to use a variable for the z index and then use the calc function to make it
+//easier to know what value is the highest
 .nav {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 4rem;
 }
+
+.nav,
+.header {
+  > * {z-index: 51;}
+}
+
+.circle_container {
+  position: absolute;
+  width: 100%;
+  z-index: 48;
+  transform: scale(1.1) translate(-30px, -20%);
+  @include respond(tab-land) {
+    transform: scale(1.1) translate(-40px, -20%);
+  }
+  @include respond(desktop) {
+  transform: scale(0.6) translate(45%, 10%);
+  }
+  &.raised { z-index: 53; }
+}
+
 
 .menu-open-icon,
 .menu-close-icon {
@@ -25,21 +47,35 @@
 }
 
 
+.menu__background {
+  position: fixed;
+  content: '';
+  min-height: 100vh;
+  top: 0;
+ right: 0;
+  width: 80vw;
+  z-index: 52;
+ background: var(--clr-blue-500);
+}
+
+.menu__background,
+.menu--main {
+  transition: transform .6s ease-in-out;
+  transform: translateX(100vw);
+    &.open {
+    transform: translateX(0vw);
+  }
+}
+
 .menu--main {
     position: fixed;
     padding: 5rem;
     min-height: 100vh;
     align-content: start;
-    background: var(--clr-blue-500);
     top: 0;
     right: 0;
     width: 80vw;
-    z-index: 100;
-    transform: translateX(100vw);
-    transition: transform .6s ease-in-out;
-    &.open {
-      transform: translateX(0vw);
-    }
+    z-index: 300;
     @include respond(tab-land) {
       position: static;
        padding: 0;
@@ -51,6 +87,7 @@
    }
 }
 
+
 ul.menu__list {
   @include respond(tab-land) {
     li { display: inline; }
@@ -61,13 +98,12 @@ ul.menu__list {
 .menu--main .menu__list {
   padding-top: 2rem;
   border-top: 1px solid var(--clr-neutral-300);
+  font-size: var(--fs-250);
   @include respond(tab-land) {
   padding: 0;
   border: none;
   }
 }
-
-
 
 footer .nav {
     grid-template-columns: 1fr;
