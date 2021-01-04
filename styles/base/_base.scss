@@ -72,6 +72,8 @@ html {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
+ overflow: hidden;
+ position: relative;
 }
 
 
@@ -86,7 +88,6 @@ html {
   padding: 4rem 4rem;
 
 
-
   @include respond(desktop) {padding: 8rem 14rem; }
 }
 
@@ -94,3 +95,4 @@ html {
   padding-bottom: 0rem;
   padding-top: 4rem;
 }
+

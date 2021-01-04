@@ -1,3 +1,7 @@
+
+
+
+
 .hero {
   display: grid;
   row-gap: 4rem;
@@ -9,6 +13,7 @@
   &__img {
     grid-row: 1;
     width: 50%;
+    z-index: 50;
   }
 
  @include respond(desktop) {
