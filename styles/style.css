@@ -153,7 +153,7 @@ html {
 }
 
 .container > * {
-  background: var(--bg, var(--clr-blue-100));
+  background-color: var(--bg, var(--clr-blue-100));
   color: var(--fg, var(--clr-blue-200));
   font-family: var(--ff-primary);
   font-size: var(--fs-200);
@@ -171,6 +171,11 @@ html {
 .container > :first-child {
   padding-bottom: 0rem;
   padding-top: 4rem;
+}
+
+.container > :last-child {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 h1, .h1,
@@ -293,16 +298,6 @@ a {
   --fg: var(--clr-neutral-200);
 }
 
-.bg-circle {
-  background: url(../../assets/shared/desktop/bg-pattern-circle.svg) no-repeat, var(--bg, var(--clr-blue-100));
-  background-position: center -510px;
-  background-size: 700px;
-}
-
-.bg-circle-bottom {
-  background-position: center 200px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -315,6 +310,12 @@ a {
 .white {
   -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
           filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
+}
+
+.bg-circle {
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .btn {
@@ -648,6 +649,7 @@ footer .logo {
 }
 
 .work {
+  background-position: left 50% top -400px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -657,6 +659,19 @@ footer .logo {
           justify-content: center;
   text-align: center;
   row-gap: 6rem;
+}
+
+@media only screen and (min-width: 48.1em) {
+  .work {
+    background-position: left 50% bottom -40%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .work {
+    background-size: 70%;
+    background-position: -90% 105%;
+  }
 }
 
 @media only screen and (min-width: 75em) {
@@ -717,6 +732,18 @@ footer .logo {
           align-items: center;
 }
 
+.features .circle_container {
+  display: none;
+}
+
+@media only screen and (min-width: 75em) {
+  .features .circle_container {
+    display: block;
+    -webkit-transform: translate(50%, 10%);
+            transform: translate(50%, 10%);
+  }
+}
+
 .features > :last-child {
   grid-column: auto;
   grid-row: auto;
@@ -756,5 +783,17 @@ footer .logo {
   .cta {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+  }
+}
+
+footer.bg-circle {
+  background-position: center top -18%;
+  background-size: 200%;
+}
+
+@media only screen and (min-width: 48.1em) {
+  footer.bg-circle {
+    background-position: 50vw 20%;
+    background-size: 70%;
   }
 }
