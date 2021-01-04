@@ -450,10 +450,11 @@ input {
 
 .circle_container {
   position: absolute;
-  width: 100%;
+  width: 1400px;
   z-index: 0;
-  -webkit-transform: scale(1.1) translate(-30px, -20%);
-          transform: scale(1.1) translate(-30px, -20%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -38%);
+          transform: translate(-50%, -38%);
 }
 
 .circle_container.raised {
@@ -462,15 +463,16 @@ input {
 
 @media only screen and (min-width: 48.1em) {
   .circle_container {
-    -webkit-transform: scale(1.1) translate(-40px, -20%);
-            transform: scale(1.1) translate(-40px, -20%);
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
   }
 }
 
 @media only screen and (min-width: 75em) {
   .circle_container {
-    -webkit-transform: scale(0.6) translate(45%, 10%);
-            transform: scale(0.6) translate(45%, 10%);
+    width: 800px;
+    -webkit-transform: translate(10%, 10%);
+            transform: translate(10%, 10%);
   }
 }
 
