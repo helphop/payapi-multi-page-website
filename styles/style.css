@@ -450,11 +450,11 @@ input {
 
 .circle_container {
   position: absolute;
-  width: 1400px;
+  width: 250%;
   z-index: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, -38%);
-          transform: translate(-50%, -38%);
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
 }
 
 .circle_container.raised {
@@ -463,8 +463,8 @@ input {
 
 @media only screen and (min-width: 48.1em) {
   .circle_container {
-    -webkit-transform: translate(-50%, -30%);
-            transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -38%);
+            transform: translate(-50%, -38%);
   }
 }
 

@@ -12,14 +12,15 @@
 
 .circle_container {
   position: absolute;
-  width: 1400px;
+  width: 250%;
+  // width: 1400px;
   z-index: 0;
   left: 50%;
-  transform: translate(-50%, -38%);
+  transform: translate(-50%, -30%);
   &.raised { z-index: 3; }
 
   @include respond(tab-land) {
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -38%);
   }
   @include respond(desktop) {
   width: 800px;
