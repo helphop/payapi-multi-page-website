@@ -445,15 +445,19 @@ input {
 
 .nav > *,
 .header > * {
-  z-index: 51;
+  z-index: 1;
 }
 
 .circle_container {
   position: absolute;
   width: 100%;
-  z-index: 48;
+  z-index: 0;
   -webkit-transform: scale(1.1) translate(-30px, -20%);
           transform: scale(1.1) translate(-30px, -20%);
+}
+
+.circle_container.raised {
+  z-index: 3;
 }
 
 @media only screen and (min-width: 48.1em) {
@@ -468,10 +472,6 @@ input {
     -webkit-transform: scale(0.6) translate(45%, 10%);
             transform: scale(0.6) translate(45%, 10%);
   }
-}
-
-.circle_container.raised {
-  z-index: 53;
 }
 
 .menu-open-icon,
@@ -514,7 +514,7 @@ input {
   top: 0;
   right: 0;
   width: 80vw;
-  z-index: 52;
+  z-index: 2;
   background: var(--clr-blue-500);
 }
 
@@ -629,7 +629,6 @@ footer .logo {
   -ms-grid-row: 1;
   grid-row: 1;
   width: 50%;
-  z-index: 50;
 }
 
 @media only screen and (min-width: 75em) {
