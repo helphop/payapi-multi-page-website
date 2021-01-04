@@ -25,7 +25,6 @@
 }
 
 .work {
-
    background-position: left 50% top -400px;
    @include respond(tab-land) {
    background-position: left 50% bottom -40%;
@@ -67,6 +66,14 @@
   column-gap: 5rem;
   row-gap: 5rem;
   align-items: center;
+
+  .circle_container {
+    display: none;
+    @include respond(desktop) {
+      display: block;
+      transform: translate(50%, 10%);
+    }
+  }
 
   > :last-child {
     grid-column: auto;
