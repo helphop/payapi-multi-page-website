@@ -23,6 +23,16 @@
   }
 }
 
+.btn-light {
+  --bg-btn: transparent;
+  --fg-btn: var(--clr-blue-500);
+  border: 1px solid var(--fg-btn);
+  &:hover {
+    --bg-btn: var(--clr-blue-500);
+    --fg-btn: var(--clr-neutral-100);
+  }
+}
+
 .btn-inline {
   display: inline-block;
   width: auto;

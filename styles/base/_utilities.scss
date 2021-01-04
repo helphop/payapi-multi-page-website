@@ -6,6 +6,10 @@
   margin-top: var(--spacer);
 }
 
+.flow-content-xsmall > * + * {
+  margin-top: calc( 0.5 * var(--spacer));
+}
+
 .flow-content-large > * + * {
   margin-top: calc(3 * var(--spacer));
 }
@@ -58,8 +62,6 @@
   --fg: var(--clr-neutral-200);
 }
 
-
-
 .text-center {
   text-align: center;
 }
@@ -76,4 +78,12 @@
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.fg-primary {
+  --fg: var(--clr-primary-100);
+}
+
+.light {
+  font-weight: var(--fw-100);
 }

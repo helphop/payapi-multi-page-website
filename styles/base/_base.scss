@@ -84,7 +84,7 @@ html {
   line-height: var(--lh-800);
   text-align: center;
   padding: 4rem 4rem;
-  @include respond(desktop) {padding: 8rem 14rem; }
+  @include respond(desktop) {padding: 6rem 14rem; }
 }
 
 .container > :first-child {

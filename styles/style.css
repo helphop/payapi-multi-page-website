@@ -164,7 +164,7 @@ html {
 
 @media only screen and (min-width: 75em) {
   .container > * {
-    padding: 8rem 14rem;
+    padding: 6rem 14rem;
   }
 }
 
@@ -233,6 +233,10 @@ a {
 
 .flow-content-small > * + * {
   margin-top: var(--spacer);
+}
+
+.flow-content-xsmall > * + * {
+  margin-top: calc( 0.5 * var(--spacer));
 }
 
 .flow-content-large > * + * {
@@ -318,6 +322,14 @@ a {
   background-size: cover;
 }
 
+.fg-primary {
+  --fg: var(--clr-primary-100);
+}
+
+.light {
+  font-weight: var(--fw-100);
+}
+
 .btn {
   color: var(--fg-btn, var(--clr-neutral-100));
   border-radius: var(--br);
@@ -343,6 +355,17 @@ a {
 .btn-dark:hover {
   --bg-btn: var(--clr-neutral-100);
   --fg-btn: var(--clr-blue-500);
+}
+
+.btn-light {
+  --bg-btn: transparent;
+  --fg-btn: var(--clr-blue-500);
+  border: 1px solid var(--fg-btn);
+}
+
+.btn-light:hover {
+  --bg-btn: var(--clr-blue-500);
+  --fg-btn: var(--clr-neutral-100);
 }
 
 .btn-inline {
@@ -796,4 +819,82 @@ footer.bg-circle {
     background-position: 50vw 20%;
     background-size: 70%;
   }
+}
+
+.pricing .circle_container {
+  -webkit-transform: translate(30%, -30%);
+          transform: translate(30%, -30%);
+  width: 50%;
+}
+
+.price_info {
+  text-align: center;
+}
+
+@media only screen and (min-width: 75em) {
+  .price_info {
+    text-align: left;
+  }
+}
+
+.pricing__cards {
+  --min: 160px;
+}
+
+.pricing__card {
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 48.1em) {
+  .pricing__card {
+    margin-bottom: 0rem;
+  }
+}
+
+ul.pricing__card-list {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--clr-neutral-300);
+  border-bottom: 1px solid var(--clr-neutral-300);
+  color: var(--clr-blue-300);
+  font-size: 1.6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  justify-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 48.1em) {
+  ul.pricing__card-list {
+    justify-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  ul.pricing__card-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+ul.pricing__card-list li:not(.light)::before {
+  content: '';
+  display: inline-block;
+  background-image: url(../../assets/shared/desktop/icon-check.svg);
+  background-repeat: no-repeat;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 2rem;
+}
+
+ul.pricing__card-list li.light {
+  margin-left: 3.5rem;
 }
