@@ -83,7 +83,8 @@ html {
   font-size: var(--fs-200);
   line-height: var(--lh-800);
   text-align: center;
-  padding: 4rem 4rem;
+  padding: 4rem 2rem;
+  @include respond(tab-land) {padding: 4rem; }
   @include respond(desktop) {padding: 6rem 14rem; }
 }
 

@@ -12,10 +12,10 @@
 
 .circle_container {
   position: absolute;
-  width: 120%;
+  width: 1600px;
   z-index: 0;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -35%);
   &.raised { z-index: 3; }
   @include respond(desktop) {
   width: 800px;

@@ -1,6 +1,5 @@
 .pricing .circle_container {
-  transform: translate(30%, -30%);
-  width: 50%;
+  transform: translate(10%, -33%);
 }
 
 .price_info {
@@ -20,35 +19,29 @@
 ul.pricing__card-list {
    margin: 2rem 0;
    padding: 2rem 0;
-   border-top: 1px solid var(--clr-neutral-300);
-   border-bottom: 1px solid var(--clr-neutral-300);
    color: var( --clr-blue-300);
    font-size: 1.6rem;
+   border-top: 1px solid var(--clr-neutral-300);
+   border-bottom: 1px solid var(--clr-neutral-300);
    display: grid;
    grid-template-columns: auto;
    justify-items: start;
-   justify-content: center;
-   @include respond(tab-land) {
-    justify-items: start;
-   justify-content: center;
-   }
-   @include respond(desktop) {
-    justify-content: start;
-   }
- li:not(.light)::before {
-   content: '';
-   display: inline-block;
-   background-image: url(../../assets/shared/desktop/icon-check.svg);
-   background-repeat: no-repeat;
-   height: 1.5rem;
-   width: 1.5rem;
-   margin-right: 2rem;
- }
+  justify-content: center;
+   @include respond(desktop) { justify-content: start;}
 
- li.light {
-   margin-left: 3.5rem;
- }
+   li:not(.light)::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/shared/desktop/icon-check.svg);
+    background-repeat: no-repeat;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 2rem;
+    }
 
+    li.light {
+    margin-left: 3.5rem;
+   }
 }
 
 
