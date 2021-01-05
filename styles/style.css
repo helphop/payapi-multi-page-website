@@ -336,6 +336,11 @@ a {
   font-weight: var(--fw-100);
 }
 
+.top-circle .circle_container {
+  -webkit-transform: translate(10%, -33%);
+          transform: translate(10%, -33%);
+}
+
 .btn {
   color: var(--fg-btn, var(--clr-neutral-100));
   border-radius: var(--br);
@@ -825,11 +830,6 @@ footer.bg-circle {
     background-position: 50vw 20%;
     background-size: 70%;
   }
-}
-
-.pricing .circle_container {
-  -webkit-transform: translate(10%, -33%);
-          transform: translate(10%, -33%);
 }
 
 .price_info {
