@@ -85,7 +85,7 @@ html {
   text-align: center;
   padding: 4rem 2rem;
   @include respond(tab-land) {padding: 4rem; }
-  @include respond(desktop) {padding: 6rem 14rem; }
+  @include respond(desktop) {padding: 8rem 14rem; }
 }
 
 .container > :first-child {
@@ -98,3 +98,6 @@ html {
   padding-bottom: 4rem;
 }
 
+.top-circle .circle_container {
+  transform: translate(10%, -33%);
+}

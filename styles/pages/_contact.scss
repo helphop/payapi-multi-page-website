@@ -1,0 +1,99 @@
+.top-circle .circle_container {
+  width: 600px;
+  transform: translate(0%, -38%);
+
+  @include respond(tab-land) {
+  transform: translate(28%, -20%);
+  }
+  @include respond(desktop) {
+    transform: translate(30%, -33%);
+    width: 600px;
+  }
+}
+
+.contact {
+  text-align: center;
+  &__title {
+    max-width: 20ch;
+    margin: 0 auto;
+  }
+  @include respond(desktop) {
+    text-align: left;
+      &__title {
+        margin: initial;
+        width: 25ch }
+  }
+}
+
+.contact__content {
+  display: grid;
+  @include respond(desktop) {
+  grid-template-columns: 50rem 1fr;
+  gap: 10rem;
+  }
+}
+
+.contact__form {
+  max-width: 600px;
+  justify-self: center;
+  text-align: left;
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid var( --clr-blue-300-50);
+    padding: 2rem;
+  }
+
+  textarea {
+    outline: none;
+  }
+
+  ::placeholder {
+    font-size: inherit;
+    color: var(--clr-blue-300);
+  }
+}
+
+.checkbox__group {
+  --gap: 4rem;
+  justify-items: start;
+  label { max-width: 40ch;}
+}
+
+input.plain-box {
+  display: inline-block;
+  align-self: center;
+  background-color: var(--clr-blue-300-25);
+  border-radius: .2rem;
+  appearance: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+
+  &:checked {
+    background-color: var(--clr-primary-100);
+    &::before {
+    content: '';
+    background-image: url(../../assets/shared/desktop/icon-check.svg);
+    width: 2.4rem;
+    height: 2.4rem;
+    top: 6px;
+    left: 6px;
+    position: absolute;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
+    }
+   }
+
+  }
+
+.joinus__title {
+  max-width: 40ch;
+  margin-left: auto;
+  margin-right: auto;
+  @include respond(desktop) {
+    margin-left: initial;}
+
+}
