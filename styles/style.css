@@ -357,6 +357,21 @@ a {
           filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
 }
 
+.pink {
+  -webkit-filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+          filter: brightness(0.5) sepia(1) hue-rotate(-70deg) saturate(5);
+}
+
+.navy {
+  -webkit-filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+          filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+}
+
+.blue {
+  -webkit-filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
+          filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
+}
+
 .bg-circle {
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
@@ -1050,14 +1065,14 @@ input.plain-check-box:checked {
 
 input.plain-check-box:checked::before {
   content: '';
-  background-image: url(../../assets/shared/desktop/icon-check.svg);
+  background-color: white;
+  -webkit-mask: url(../../assets/shared/desktop/icon-check.svg);
+          mask: url(../../assets/shared/desktop/icon-check.svg);
   width: 2.4rem;
   height: 2.4rem;
   top: 6px;
   left: 6px;
   position: absolute;
-  -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
-          filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7483%) hue-rotate(25deg) brightness(99%) contrast(108%);
 }
 
 .joinus__title {
