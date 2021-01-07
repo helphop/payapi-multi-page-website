@@ -1,0 +1,12 @@
+.top-circle .circle_container {
+  width: 600px;
+  transform: translate(0%, -38%);
+
+  @include respond(tab-land) {
+  transform: translate(28%, -20%);
+  }
+  @include respond(desktop) {
+    transform: translate(30%, -33%);
+    width: 600px;
+  }
+}
