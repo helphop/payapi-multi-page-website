@@ -2,19 +2,18 @@
 
   --opacity-500: 0.5; //disabled buttons
 
-  --clr-neutral-100: hsl(220, 60%, 99%); //form fields
-  --clr-neutral-200: hsl(207, 58%, 99%); //menu text
-  --clr-neutral-300: hsla(0, 0%, 59%, 0.15);
+  @include defineColorHSL(--clr-neutral-100, 220, 60%, 99%); //form fields
+  @include defineColorHSL(--clr-neutral-200, 207, 58%, 99%); //menu text
+  @include defineColorHSL(--clr-neutral-250, 0, 0%, 59%);
+ --clr-neutral-300: alpha(var(--clr-neutral-250), 0.15);
 
-  --clr-primary-100: hsl(337, 48%, 49%); // primary button
-  --clr-primary-200: hsl(337, 60%, 64%); // hover color
+  @include defineColorHSL(--clr-primary-100, 337, 48%, 49%); // primary button
+  @include defineColorHSL(--clr-primary-200, 337, 60%, 64%); // hover color
 
-  --clr-blue-100: hsl(209, 46%, 95%); //bg
-  --clr-blue-200: hsl(207, 16%, 50%);
-  --clr-blue-300: hsl(207, 33%, 32%); //text
-  --clr-blue-300-50:hsla(207, 33%, 32%, .5);
-  --clr-blue-300-25:hsla(207, 33%, 32%, .25);
-  --clr-blue-500: hsl(207,27%,15%); //bg work-with footer
+  @include defineColorHSL(--clr-blue-100, 209, 46%, 95% ); //bg
+  @include defineColorHSL(--clr-blue-200, 207, 16%, 50%);
+  @include defineColorHSL(--clr-blue-300 , 207, 33%, 32%); //text
+  @include defineColorHSL(--clr-blue-500, 207, 27%, 15%); //bg work-with footer
 
   --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
 

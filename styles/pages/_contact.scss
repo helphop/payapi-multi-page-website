@@ -41,7 +41,7 @@
   textarea {
     display: block;
     width: 100%;
-    border-bottom: 1px solid var( --clr-blue-300-50);
+    border-bottom: 1px solid alpha(var(--clr-blue-300), 0.5);
     padding: 2rem;
   }
 
@@ -61,10 +61,10 @@
   label { max-width: 40ch;}
 }
 
-input.plain-box {
+input.plain-check-box {
   display: inline-block;
   align-self: center;
-  background-color: var(--clr-blue-300-25);
+  background-color: alpha(var(--clr-blue-300), 0.25);
   border-radius: .2rem;
   appearance: none;
   width: 2.4rem;
@@ -93,7 +93,5 @@ input.plain-box {
   max-width: 40ch;
   margin-left: auto;
   margin-right: auto;
-  @include respond(desktop) {
-    margin-left: initial;}
-
+  @include respond(desktop) {margin-left: initial;}
 }
