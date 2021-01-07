@@ -707,6 +707,27 @@ footer .logo {
   }
 }
 
+.top-circle .circle_container {
+  width: 600px;
+  -webkit-transform: translate(0%, -38%);
+          transform: translate(0%, -38%);
+}
+
+@media only screen and (min-width: 48.1em) {
+  .top-circle .circle_container {
+    -webkit-transform: translate(28%, -20%);
+            transform: translate(28%, -20%);
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .top-circle .circle_container {
+    -webkit-transform: translate(30%, -33%);
+            transform: translate(30%, -33%);
+    width: 600px;
+  }
+}
+
 .hero {
   display: -ms-grid;
   display: grid;
@@ -924,27 +945,6 @@ ul.pricing__card-list li:not(.light)::before {
 
 ul.pricing__card-list li.light {
   margin-left: 3.5rem;
-}
-
-.top-circle .circle_container {
-  width: 600px;
-  -webkit-transform: translate(0%, -38%);
-          transform: translate(0%, -38%);
-}
-
-@media only screen and (min-width: 48.1em) {
-  .top-circle .circle_container {
-    -webkit-transform: translate(28%, -20%);
-            transform: translate(28%, -20%);
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  .top-circle .circle_container {
-    -webkit-transform: translate(30%, -33%);
-            transform: translate(30%, -33%);
-    width: 600px;
-  }
 }
 
 .contact {
