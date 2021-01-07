@@ -58,7 +58,7 @@
 }
 
 .bg-dark {
-  --bg: var(--clr-blue-500);
+  --bg: var(--clr-blue-500); //adjustColor(var(--clr-blue-500), $opacity: 1, $saturationMultiplier: 1, $lightnessMultiplier: 1);
   --fg: var(--clr-neutral-200);
 }
 

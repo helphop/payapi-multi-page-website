@@ -38,8 +38,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
   #{$color}-l: #{$lightness};
 }
 
+@function adjustColor($color, $opacity, $saturationMultiplier: 1, $lightnessMultiplier: 1){
+  $color: str-replace($color, 'var(');
+  $color: str-replace($color, ')');
+  $color-h: var(#{$color+'-h'});
+  $color-s: var(#{$color+'-s'});
+  $color-l: var(#{$color+'-l'});
+  @return hsla($color-h, calc(#{$color-s} * #{$saturationMultiplier}), calc(#{$color-l} * #{$lightnessMultiplier}), $opacity);
+}
+
 // return css color variable with different opacity value
-@function alpha($color, $opacity){
+@function alpha($color, $opacity: 1){
   $color: str-replace($color, 'var(');
   $color: str-replace($color, ')');
   $color-h: var(#{$color+'-h'});

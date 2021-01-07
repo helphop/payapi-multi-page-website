@@ -15,7 +15,8 @@
   @include defineColorHSL(--clr-blue-300 , 207, 33%, 32%); //text
   @include defineColorHSL(--clr-blue-500, 207, 27%, 15%); //bg work-with footer
 
-  --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
+  --clr-tester: 207, 27%, 15%;
+  --box-shadow-100: 2.5rem 2.5rem 8rem #{alpha(var(--clr-blue-300), 0.3)};
 
   --br: 3rem;
   --spacer: 1.6rem;

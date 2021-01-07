@@ -54,7 +54,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   --clr-blue-500-h: 207;
   --clr-blue-500-s: 27%;
   --clr-blue-500-l: 15%;
-  --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
+  --clr-tester: 207, 27%, 15%;
+  --box-shadow-100: 2.5rem 2.5rem 8rem hsla(var(--clr-blue-300-h), var(--clr-blue-300-s), var(--clr-blue-300-l), 0.3);
   --br: 3rem;
   --spacer: 1.6rem;
   --ff-primary: 'Public Sans', sans-serif;
