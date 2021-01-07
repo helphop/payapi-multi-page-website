@@ -18,16 +18,42 @@ ORDER: Base + typography > general layout + grid > page layout > components
 :root {
   --opacity-500: 0.5;
   --clr-neutral-100: hsl(220, 60%, 99%);
+  --clr-neutral-100-h: 220;
+  --clr-neutral-100-s: 60%;
+  --clr-neutral-100-l: 99%;
   --clr-neutral-200: hsl(207, 58%, 99%);
-  --clr-neutral-300: hsla(0, 0%, 59%, 0.15);
+  --clr-neutral-200-h: 207;
+  --clr-neutral-200-s: 58%;
+  --clr-neutral-200-l: 99%;
+  --clr-neutral-250: hsl(0, 0%, 59%);
+  --clr-neutral-250-h: 0;
+  --clr-neutral-250-s: 0%;
+  --clr-neutral-250-l: 59%;
+  --clr-neutral-300: alpha(var(--clr-neutral-250), 0.15);
   --clr-primary-100: hsl(337, 48%, 49%);
+  --clr-primary-100-h: 337;
+  --clr-primary-100-s: 48%;
+  --clr-primary-100-l: 49%;
   --clr-primary-200: hsl(337, 60%, 64%);
+  --clr-primary-200-h: 337;
+  --clr-primary-200-s: 60%;
+  --clr-primary-200-l: 64%;
   --clr-blue-100: hsl(209, 46%, 95%);
+  --clr-blue-100-h: 209;
+  --clr-blue-100-s: 46%;
+  --clr-blue-100-l: 95%;
   --clr-blue-200: hsl(207, 16%, 50%);
+  --clr-blue-200-h: 207;
+  --clr-blue-200-s: 16%;
+  --clr-blue-200-l: 50%;
   --clr-blue-300: hsl(207, 33%, 32%);
-  --clr-blue-300-50:hsla(207, 33%, 32%, .5);
-  --clr-blue-300-25:hsla(207, 33%, 32%, .25);
-  --clr-blue-500: hsl(207,27%,15%);
+  --clr-blue-300-h: 207;
+  --clr-blue-300-s: 33%;
+  --clr-blue-300-l: 32%;
+  --clr-blue-500: hsl(207, 27%, 15%);
+  --clr-blue-500-h: 207;
+  --clr-blue-500-s: 27%;
+  --clr-blue-500-l: 15%;
   --box-shadow-100: 2.5rem 2.5rem 8rem hsla(207, 33%, 32%, 30%);
   --br: 3rem;
   --spacer: 1.6rem;
@@ -964,7 +990,7 @@ ul.pricing__card-list li.light {
 .contact__form textarea {
   display: block;
   width: 100%;
-  border-bottom: 1px solid var(--clr-blue-300-50);
+  border-bottom: 1px solid hsla(var(--clr-blue-300-h), var(--clr-blue-300-s), var(--clr-blue-300-l), 0.5);
   padding: 2rem;
 }
 
@@ -1001,12 +1027,12 @@ ul.pricing__card-list li.light {
   max-width: 40ch;
 }
 
-input.plain-box {
+input.plain-check-box {
   display: inline-block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: var(--clr-blue-300-25);
+  background-color: hsla(var(--clr-blue-300-h), var(--clr-blue-300-s), var(--clr-blue-300-l), 0.25);
   border-radius: .2rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1018,11 +1044,11 @@ input.plain-box {
   position: relative;
 }
 
-input.plain-box:checked {
+input.plain-check-box:checked {
   background-color: var(--clr-primary-100);
 }
 
-input.plain-box:checked::before {
+input.plain-check-box:checked::before {
   content: '';
   background-image: url(../../assets/shared/desktop/icon-check.svg);
   width: 2.4rem;
