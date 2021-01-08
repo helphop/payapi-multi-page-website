@@ -24,25 +24,35 @@
 }
 
 .work {
-   background-position: left 50% top -400px;
-   @include respond(tab-land) {
-   background-position: left 50% bottom -40%;
-   }
-  @include respond(desktop) {
-   background-size: 70%;
-   background-position: -90% 105%;
-   }
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
  text-align: center;
-  row-gap: 6rem;
-  column-gap: 4rem;
+  gap: 6rem;
   @include respond(desktop) {
-  grid-template-columns: minmax(auto, 45rem) minmax(20rem, 55rem);
+  grid-template-columns: minmax(auto, 45rem) 1fr;
   text-align: left;
   justify-content: space-between;
   }
+  & > * { z-index: 0;}
+  .circle__wrapper {
+      position: absolute;
+      display: block;
+      top: -25%;
+      left: 50%;
+      width: 80rem;
+      height: 80rem;
+      transform: translate(-50%, -50%);
+      @include respond(desktop){
+      transform: translate(-50%, -50%);
+      top: 0%;
+      left: 0%;
+      }
+  }
+
+
 }
 
 .features {

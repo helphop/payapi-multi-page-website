@@ -701,33 +701,42 @@ footer .split-adapt {
 }
 
 .work {
-  background-position: left 50% top -400px;
+  position: relative;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   text-align: center;
-  row-gap: 6rem;
-  column-gap: 4rem;
-}
-
-@media only screen and (min-width: 48.1em) {
-  .work {
-    background-position: left 50% bottom -40%;
-  }
+  gap: 6rem;
 }
 
 @media only screen and (min-width: 75em) {
   .work {
-    background-size: 70%;
-    background-position: -90% 105%;
-  }
-}
-
-@media only screen and (min-width: 75em) {
-  .work {
-    grid-template-columns: minmax(auto, 45rem) minmax(20rem, 55rem);
+    grid-template-columns: minmax(auto, 45rem) 1fr;
     text-align: left;
     justify-content: space-between;
+  }
+}
+
+.work > * {
+  z-index: 0;
+}
+
+.work .circle__wrapper {
+  position: absolute;
+  display: block;
+  top: -25%;
+  left: 50%;
+  width: 80rem;
+  height: 80rem;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 75em) {
+  .work .circle__wrapper {
+    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 0%;
   }
 }
 
