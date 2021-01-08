@@ -1,0 +1,41 @@
+.about {
+  text-align: center;
+  @include respond(tab-land) {
+    text-align: left;
+    .info__title {text-align: center;}
+  }
+  @include respond(desktop) {
+    .info__title {text-align: left;}
+  }
+}
+
+.section__wrapper {
+ @include respond(desktop) {
+  margin: 0 auto;
+  max-width: 80%;
+ }
+}
+
+.info__content{
+  display: grid;
+  gap: 4rem;
+  @include respond(tab-land) {
+    grid-template-columns: 1fr 3fr;
+    text-align: left;
+  }
+  h3 {font-weight: var(--fw-100) }
+}
+
+.focus_img {
+  padding: 0;
+}
+
+.stats {
+  text-align: left;
+  .h1 {--fg: var(--clr-primary-100);}
+  &__card {
+    padding: 2rem;
+    border-top: 1px solid alpha(var(--clr-blue-300), 0.25);
+    border-bottom: 1px solid alpha(var(--clr-blue-300), 0.25);
+  }
+}

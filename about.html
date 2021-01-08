@@ -1,62 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <script src="javascript/scripts.js" defer></script>
+  <title>Frontend Mentor | PayAPI Website Challenge</title>
+</head>
 
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
-  </head>
+<body>
+  <div class="container about top-circle">
+    <nav class="nav">
+      <div class="logo"><a href="http://127.0.0.1:5500/"><img src="assets/shared/desktop/logo.svg" alt="logo"></a></div>
+      <img class="menu-open-icon" src="assets/shared/mobile/menu.svg" alt="menu icon">
+      <div class="circle_container"><img src="assets/shared/desktop/bg-pattern-circle.svg" class="circle" alt=""></div>
+      <div class="menu__background"></div>
+      <div class="menu menu--main">
+        <div class="menu-close-icon"><img class="close-icon" src="assets/shared/mobile/close.svg" alt="close icon">
+        </div>
+        <ul class="menu__list flow-content">
+          <li><a href="http://127.0.0.1:5500/pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary">Schedule a Demo</a>
+      </div>
+    </nav>
+    <section class="info flow-content-large">
+      <div class="section__wrapper flow-content-xlarge">
+        <h1 class="sm info__title">We empower innovators by delivering access to the financial system</h1>
+        <div class="info__content">
+          <h3>Our Vision</h3>
+          <p>Our main goal is to build beautiful consumer experiences along with developer-friendly
+          infrastructure. The result is an intelligent tool that gives everyone the ability to create
+          amazing products that solve big problems. We are deeply focused on democratizing financial
+          services through technology.</p>
+          <h3>Our Business</h3>
+          <p>At the core of our platform is the technical infrastructure APIs that connect consumers.
+          Our innovative product provides key insights for businesses and individuals, as well as
+          robust reporting for traditional financial institutions and developer</p>
+        </div>
+      </div>
+    </section>
 
-  <body>
-    Pricing
-    About
-    Contact
-    Schedule a Demo
+    <picture class="focus_img">
+      <source media="(min-width: 768px)" srcset="assets/about/desktop/image-team-members.jpg">
+      <source media="(min-width: 375px)" srcset="assets/about/tablet/image-team-members.jpg">
+      <img src="assets/about/mobile/image-team-members.jpg">
+    </picture>
 
-    We empower innovators by delivering access to the financial system
+    <section class="stats split">
+      <div class="stats__card">
+        <p class="stats__title">Team Members</p>
+        <p class="h1 small">300+</p>
+      </div>
+      <div class="stats__card">
+        <p class="stats_title">Offices in the US</p>
+        <p class="h1 small">3</p>
+      </div>
+      <div class="stats__card">
+        <p class="stats_title">Transactions analyzed</p>
+        <p class="h1 small">10M+</p>
+      </div>
+    </section>
 
-    Our Vision
+    <section class="info flow-content-large">
+      <div class="section__wrapper flow-content-large">
+        <div class="info__content">
+          <h3>The Culture</h3>
+          <p>We strongly believe there's always an opportunity to learn from each other outside of
+          day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups.
+          We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
+          <h3>The People</h3>
+          <p>We're all passionate about building a more efficient and inclusive financial infrastructure
+          together. At PayAPI, we have diverse backgrounds and skills.</p>
+        </div>
+      </div>
+    </section>
 
-    Our main goal is to build beautiful consumer experiences along with developer-friendly 
-    infrastructure. The result is an intelligent tool that gives everyone the ability to create 
-    amazing products that solve big problems. We are deeply focused on democratizing financial 
-    services through technology.
+    <section class="cta space-bt">
+      <h2>Ready to start?</h2>
+      <form action="" class="demo" method="post">
+        <div class="input__group">
+          <input type="email" class="demo__email" placeholder="Enter email address">
+          <button type="submit" class="btn btn-primary">Schedule a Demo</button>
+        </div>
+      </form>
+    </section>
 
-    Our Business
+    <footer class="bg-dark bg-circle">
+      <nav class="nav">
+        <div class="logo white"><img src="assets/shared/desktop/logo.svg" alt="logo"></div>
+        <div class="menu">
+          <ul class="menu__list flow-content">
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="split-adapt">
+            <a href="facebook.com"><img src="assets/shared/desktop/facebook.svg" alt="facebook"></a>
+            <a href="twitter.com"><img src="assets/shared/desktop/twitter.svg" alt="twitter"></a>
+            <a href="linkedin.com"><img src="assets/shared/desktop/linkedin.svg" alt="linkedin"></a>
+          </div>
+        </div>
+      </nav>
+    </footer>
 
-    At the core of our platform is the technical infrastructure APIs that connect consumers. 
-    Our innovative product provides key insights for businesses and individuals, as well as 
-    robust reporting for traditional financial institutions and developers.
-
-    Team Members 
-    300+
-
-    Offices in the US 
-    3
-
-    Transactions analyzed 
-    10M+
-
-    The Culture
-
-    We strongly believe there's always an opportunity to learn from each other outside of 
-    day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
-    We always value cross-team collaboration and diversity of thought, no matter the job title.
-
-    The People
-    
-    We're all passionate about building a more efficient and inclusive financial infrastructure 
-    together. At PayAPI, we have diverse backgrounds and skills.
-
-    Ready to start? 
-    Enter email address 
-    Schedule a Demo
-
-    Pricing
-    About
-    Contact
+    </div>
   </body>
 
 </html>
