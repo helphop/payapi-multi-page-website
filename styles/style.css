@@ -376,6 +376,7 @@ a {
   padding: 0.8em 2em;
   width: 100%;
   display: block;
+  text-align: center;
   font-weight: var(--fw-700);
   transition: all .4s ease;
   background: var(--bg-btn, var(--clr-primary-100));
@@ -521,29 +522,21 @@ a {
   }
 }
 
-.menu__background {
-  position: fixed;
-  content: '';
-  min-height: 100vh;
-  top: 0;
-  right: 0;
-  width: 80vw;
-  z-index: 2;
-  background: var(--clr-blue-500);
-}
-
-.menu__background,
 .menu--main {
   transition: transform .6s ease-in-out;
   transform: translateX(100vw);
 }
 
-.menu__background.open,
 .menu--main.open {
   transform: translateX(0vw);
 }
 
 .menu--main {
+  background-color: var(--clr-blue-500);
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: right 30% top -110%;
   position: fixed;
   padding: 5rem;
   min-height: 100vh;
@@ -576,8 +569,9 @@ a {
 }
 
 .menu--main .menu__list {
-  padding-top: 2rem;
-  border-top: 1px solid var(--clr-neutral-300);
+  text-align: center;
+  padding-top: 4rem;
+  border-top: 1px solid hsla(var(--clr-blue-300-h), var(--clr-blue-300-s), var(--clr-blue-300-l), 0.5);
   font-size: var(--fs-250);
 }
 
@@ -586,22 +580,6 @@ a {
     padding: 0;
     border: none;
   }
-}
-
-footer .nav {
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-
-@media only screen and (min-width: 48.1em) {
-  footer .nav {
-    grid-template-columns: auto 1fr;
-  }
-}
-
-footer .split-adapt {
-  --gap: 4rem;
-  justify-self: center;
 }
 
 .cta {
@@ -639,6 +617,22 @@ footer.bg-circle {
 
 .social {
   --gap: 3rem;
+}
+
+footer .nav {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media only screen and (min-width: 48.1em) {
+  footer .nav {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+footer .split-adapt {
+  --gap: 4rem;
+  justify-self: center;
 }
 
 .logos {
@@ -717,6 +711,7 @@ footer.bg-circle {
   justify-content: center;
   text-align: center;
   row-gap: 6rem;
+  column-gap: 4rem;
 }
 
 @media only screen and (min-width: 48.1em) {
@@ -735,7 +730,6 @@ footer.bg-circle {
 @media only screen and (min-width: 75em) {
   .work {
     grid-template-columns: minmax(auto, 45rem) minmax(20rem, 55rem);
-    column-gap: 2rem;
     text-align: left;
     justify-content: space-between;
   }
