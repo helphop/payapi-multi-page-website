@@ -532,7 +532,11 @@ a {
 }
 
 .menu--main {
-  background: var(--clr-blue-500);
+  background-color: var(--clr-blue-500);
+  background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position: right 30% top -110%;
   position: fixed;
   padding: 5rem;
   min-height: 100vh;
@@ -578,22 +582,6 @@ a {
   }
 }
 
-footer .nav {
-  grid-template-columns: 1fr;
-  align-items: center;
-}
-
-@media only screen and (min-width: 48.1em) {
-  footer .nav {
-    grid-template-columns: auto 1fr;
-  }
-}
-
-footer .split-adapt {
-  --gap: 4rem;
-  justify-self: center;
-}
-
 .cta {
   gap: 4rem;
   display: grid;
@@ -629,6 +617,22 @@ footer.bg-circle {
 
 .social {
   --gap: 3rem;
+}
+
+footer .nav {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+@media only screen and (min-width: 48.1em) {
+  footer .nav {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+footer .split-adapt {
+  --gap: 4rem;
+  justify-self: center;
 }
 
 .logos {

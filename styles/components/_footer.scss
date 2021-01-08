@@ -15,4 +15,15 @@ footer {
   --gap: 3rem;
 }
 
+footer .nav {
+    grid-template-columns: 1fr;
+    align-items: center;
+    @include respond(tab-land) {
+      grid-template-columns: auto 1fr;
+    }
+}
 
+footer .split-adapt {
+  --gap: 4rem;
+  justify-self: center;
+}
