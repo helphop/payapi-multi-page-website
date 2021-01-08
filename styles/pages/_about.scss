@@ -1,11 +1,16 @@
 .about {
   text-align: center;
-  @include respond(tab-land) {
-    text-align: left;
-    .info__title {text-align: center;}
+  .info__title {
+    max-width: 22ch;
+    margin: 0 auto;
+    text-align: center;
   }
+  @include respond(tab-land) {text-align: left;}
   @include respond(desktop) {
-    .info__title {text-align: left;}
+    .info__title {
+      text-align: left;
+      margin: 0 auto 0 0;
+    }
   }
 }
 
@@ -16,26 +21,26 @@
  }
 }
 
-.info__content{
+.info__content {
   display: grid;
-  gap: 4rem;
-  @include respond(tab-land) {
-    grid-template-columns: 1fr 3fr;
-    text-align: left;
-  }
-  h3 {font-weight: var(--fw-100) }
+  gap: 3rem;
+  & > :nth-child(2) {margin-bottom: 3rem;}
+  @include respond(tab-land) { grid-template-columns: 1fr 3fr;}
 }
 
-.focus_img {
-  padding: 0;
-}
+.focus_img {padding: 0;}
 
 .stats {
-  text-align: left;
-  .h1 {--fg: var(--clr-primary-100);}
+  text-align: center;
   &__card {
     padding: 2rem;
-    border-top: 1px solid alpha(var(--clr-blue-300), 0.25);
-    border-bottom: 1px solid alpha(var(--clr-blue-300), 0.25);
+    &:first-child {border-top: 1px solid alpha(var(--clr-blue-300), 0.25);}
+    &:last-child {border-bottom: 1px solid alpha(var(--clr-blue-300), 0.25);}
+  }
+  @include respond(tab-land) {
+    &__card {
+      border-top: 1px solid alpha(var(--clr-blue-300), 0.25);
+      border-bottom: 1px solid alpha(var(--clr-blue-300), 0.25);
+    }
   }
 }

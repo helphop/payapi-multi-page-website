@@ -1,6 +1,6 @@
 :root {
 
-  --opacity-500: 0.5; //disabled buttons
+
 
   @include defineColorHSL(--clr-neutral-100, 220, 60%, 99%); //form fields
   @include defineColorHSL(--clr-neutral-200, 207, 58%, 99%); //menu text
@@ -15,7 +15,7 @@
   @include defineColorHSL(--clr-blue-300 , 207, 33%, 32%); //text
   @include defineColorHSL(--clr-blue-500, 207, 27%, 15%); //bg work-with footer
 
-  --clr-tester: 207, 27%, 15%;
+   --opacity-500: 0.5; //disabled buttons
   --box-shadow-100: 2.5rem 2.5rem 8rem #{alpha(var(--clr-blue-300), 0.3)};
 
   --br: 3rem;

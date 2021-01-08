@@ -1,0 +1,7 @@
+.cta {
+  gap: 4rem;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  @include respond(desktop) { grid-template-columns: repeat(2, auto);}
+}
