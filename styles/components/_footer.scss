@@ -1,11 +1,18 @@
 footer {
-  background: var(--bg);
+  text-align: center   ;
   .logo {
     margin: 0 auto;
     display: inline-block;
+  }
+  &.bg-circle {
+   background-position: center top -35%;
+   background-size: 900px;
+    @include respond(tab-land) {background-position: 50vw 20% }
   }
 }
 
 .social {
   --gap: 3rem;
 }
+
+

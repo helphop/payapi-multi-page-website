@@ -14,6 +14,10 @@
   margin-top: calc(3 * var(--spacer));
 }
 
+.flow-content-xlarge > * + * {
+  margin-top: calc(4 * var(--spacer));
+}
+
 .split-auto {
   display: grid;
   row-gap: var(--row-gap, 2rem);
@@ -98,5 +102,9 @@
 
 .light {
   font-weight: var(--fw-100);
+}
+
+.fg-primary {
+  --fg: var(--clr-primary-100);
 }
 

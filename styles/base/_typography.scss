@@ -4,9 +4,9 @@ h2, .h2,
 h3, .h3,
 h4, .h4 {
   color: var(--fg, var(--clr-blue-300));
-  line-height: var(--lh-000);
+  line-height: var(--lh-100);
+  font-family: var(--ff-secondary);
 }
-
 
 h1,.h1 {
   font-size: var(--fs-800);

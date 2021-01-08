@@ -1,5 +1,3 @@
-
-
 .price_info {
   text-align: center;
   @include respond(desktop) {text-align: left;}
@@ -19,8 +17,8 @@ ul.pricing__card-list {
    padding: 2rem 0;
    color: var( --clr-blue-300);
    font-size: 1.6rem;
-   border-top: 1px solid var(--clr-neutral-300);
-   border-bottom: 1px solid var(--clr-neutral-300);
+   border-top: 1px solid alpha(var(--clr-blue-300), 0.25);
+   border-bottom: 1px solid alpha(var(--clr-blue-300), 0.25);
    display: grid;
    grid-template-columns: auto;
    justify-items: start;

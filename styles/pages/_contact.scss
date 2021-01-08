@@ -1,15 +1,15 @@
 
 .contact {
   text-align: center;
-  &__title {
+  .section__title {
     max-width: 20ch;
     margin: 0 auto;
   }
   @include respond(desktop) {
     text-align: left;
-      &__title {
-        margin: initial;
-        width: 25ch }
+    .section__title {
+      margin: initial;
+      width: 25ch }
   }
 }
 
@@ -22,7 +22,7 @@
 }
 
 .contact__form {
-  max-width: 600px;
+width: 44.5rem;
   justify-self: center;
   text-align: left;
   input,
@@ -41,6 +41,7 @@
     font-size: inherit;
     color: var(--clr-blue-300);
   }
+  @include respond(desktop) { justify-self: initial;}
 }
 
 .checkbox__group {
