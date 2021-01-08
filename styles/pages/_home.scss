@@ -37,6 +37,7 @@
   justify-content: space-between;
   }
   & > * { z-index: 0;}
+
   .circle__wrapper {
       position: absolute;
       display: block;
@@ -63,12 +64,18 @@
   row-gap: 5rem;
   align-items: center;
   text-align: center;
+  position: relative;
 
-  .circle_container {
+  .circle__wrapper{
     display: none;
     @include respond(desktop) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80rem;
+      height: 80rem;
       display: block;
-      transform: translate(50%, 10%);
+      transform: translate(60%, 30%);
     }
   }
 
