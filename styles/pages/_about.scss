@@ -28,7 +28,23 @@
   @include respond(tab-land) { grid-template-columns: 1fr 3fr;}
 }
 
-.focus_img {padding: 0;}
+.focus {
+  padding: 0;
+  position: relative;
+  &__img { position: relative; }
+  .circle_wrapper {
+    display: none;
+    @include respond(desktop) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 80rem;
+      height: 80rem;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+  }
+}
 
 .stats {
   text-align: center;

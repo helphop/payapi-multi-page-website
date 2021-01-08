@@ -987,8 +987,29 @@ input.plain-check-box:checked::before {
   }
 }
 
-.focus_img {
+.focus {
   padding: 0;
+  position: relative;
+}
+
+.focus__img {
+  position: relative;
+}
+
+.focus .circle_wrapper {
+  display: none;
+}
+
+@media only screen and (min-width: 75em) {
+  .focus .circle_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 80rem;
+    height: 80rem;
+    transform: translate(-50%, -50%);
+    display: block;
+  }
 }
 
 .stats {
