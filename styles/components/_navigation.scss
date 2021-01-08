@@ -16,7 +16,6 @@
   z-index: 0;
   left: 50%;
   transform: translate(-50%, -35%);
-  &.raised { z-index: 3; }
   @include respond(desktop) {
   width: 800px;
   transform: translate(10%, 10%);
@@ -54,8 +53,8 @@
   background-color: var(--clr-blue-500);
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-size: 160%;
-  background-position: right 30% top -110%;
+  background-size: 800px;
+  background-position: right -30px  top -460px;
   position: fixed;
   padding: 5rem;
   min-height: 100vh;

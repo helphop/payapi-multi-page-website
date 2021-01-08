@@ -483,10 +483,6 @@ a {
   transform: translate(-50%, -35%);
 }
 
-.circle_container.raised {
-  z-index: 3;
-}
-
 @media only screen and (min-width: 75em) {
   .circle_container {
     width: 800px;
@@ -535,8 +531,8 @@ a {
   background-color: var(--clr-blue-500);
   background-image: url(../../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-size: 160%;
-  background-position: right 30% top -110%;
+  background-size: 800px;
+  background-position: right -30px  top -460px;
   position: fixed;
   padding: 5rem;
   min-height: 100vh;
