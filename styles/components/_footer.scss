@@ -1,29 +1,37 @@
 footer {
-  text-align: center   ;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
   .logo {
     margin: 0 auto;
     display: inline-block;
   }
-  &.bg-circle {
-   background-position: center top -35%;
-   background-size: 900px;
-    @include respond(tab-land) {background-position: 50vw 20% }
-  }
-}
-
-.social {
-  --gap: 3rem;
-}
-
-footer .nav {
+ .nav {
     grid-template-columns: 1fr;
     align-items: center;
     @include respond(tab-land) {
       grid-template-columns: auto 1fr;
     }
+  }
+
+  .circle__wrapper {
+      position: absolute;
+      display: block;
+      top: -50%;
+      right: 50%;
+      width: 80rem;
+      height: 80rem;
+      transform: translate(50%, 45%);
+      @include respond(tab-land){
+      transform: translate(30%, -10%);
+      top: 0;
+      right: 0;
+      }
+  }
 }
 
-footer .split-adapt {
-  --gap: 4rem;
+.social {
+  --gap: 3rem;
   justify-self: center;
 }
+
