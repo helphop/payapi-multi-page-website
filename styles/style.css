@@ -548,7 +548,6 @@ a {
   top: 0;
   right: 0;
   width: 80vw;
-  z-index: 300;
 }
 
 @media only screen and (min-width: 48.1em) {

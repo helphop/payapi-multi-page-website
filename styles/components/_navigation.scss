@@ -63,7 +63,6 @@
   top: 0;
   right: 0;
   width: 80vw;
-  z-index: 300;
   @include respond(tab-land) {
     position: static;
     padding: 0;
