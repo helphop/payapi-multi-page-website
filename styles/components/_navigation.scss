@@ -3,22 +3,21 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 4rem;
-}
+  position: relative;
 
-.nav,
-.header {
-  > * {z-index: 1;}
-}
-
-.circle_container {
-  position: absolute;
-  width: 1600px;
-  z-index: 0;
-  left: 50%;
-  transform: translate(-50%, -35%);
-  @include respond(desktop) {
-  width: 800px;
-  transform: translate(10%, 10%);
+  .circle__wrapper {
+      position: absolute;
+      display: block;
+      z-index: 0;
+      top: 0;
+      left: 50%;
+      width: 140rem;
+      transform: translate(-50%, -80%);
+      @include respond(tab-land) {transform: translate(-50%, -70%);}
+      @include respond(desktop) {
+      transform: translate(15%, -30%);
+      width: 80rem;
+      }
   }
 }
 

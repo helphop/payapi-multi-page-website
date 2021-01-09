@@ -17,6 +17,7 @@ footer {
   .circle__wrapper {
       position: absolute;
       display: block;
+      z-index: 0;
       top: -50%;
       right: 50%;
       width: 80rem;
