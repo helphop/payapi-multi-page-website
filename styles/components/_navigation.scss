@@ -8,18 +8,18 @@
   & > * {z-index: 1;}
 
   .circle__wrapper {
-      position: absolute;
-      display: block;
-      z-index: 0;
-      top: 0;
-      left: 50%;
-      width: 140rem;
-      transform: translate(-50%, -80%);
-      @include respond(tab-land) {transform: translate(-50%, -70%);}
-      @include respond(desktop) {
-      transform: translate(15%, -30%);
-      width: 80rem;
-      }
+    position: absolute;
+    display: block;
+    z-index: 0;
+    top: 0;
+    left: 50%;
+    width: 140rem;
+    transform: translate(-50%, -80%);
+    @include respond(tab-land) {transform: translate(-50%, -70%);}
+    @include respond(desktop) {
+    transform: translate(15%, -30%);
+    width: 80rem;
+    }
   }
 }
 

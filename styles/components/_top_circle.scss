@@ -1,12 +1,12 @@
-.top-circle .circle_container {
-  width: 600px;
-  transform: translate(0%, -38%);
+.circle__wrapper--inner {
+  position: absolute;
+  display: block;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 80rem;
+  transform: translate(60%, -85%);
+  @include respond(tab-land) {transform: translate(50%, -70%)};
+  @include respond(desktop) {transform: translate(20%, -60%);}
 
-  @include respond(tab-land) {
-  transform: translate(28%, -20%);
-  }
-  @include respond(desktop) {
-    transform: translate(30%, -33%);
-    width: 600px;
-  }
 }
