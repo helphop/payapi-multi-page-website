@@ -468,25 +468,29 @@ a {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 4rem;
+  position: relative;
 }
 
-.nav > *,
-.header > * {
-  z-index: 1;
-}
-
-.circle_container {
+.nav .circle__wrapper {
   position: absolute;
-  width: 1600px;
+  display: block;
   z-index: 0;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -35%);
+  width: 140rem;
+  transform: translate(-50%, -80%);
+}
+
+@media only screen and (min-width: 48.1em) {
+  .nav .circle__wrapper {
+    transform: translate(-50%, -70%);
+  }
 }
 
 @media only screen and (min-width: 75em) {
-  .circle_container {
-    width: 800px;
-    transform: translate(10%, 10%);
+  .nav .circle__wrapper {
+    transform: translate(15%, -30%);
+    width: 80rem;
   }
 }
 
@@ -616,6 +620,7 @@ footer .nav {
 footer .circle__wrapper {
   position: absolute;
   display: block;
+  z-index: 0;
   top: -50%;
   right: 50%;
   width: 80rem;
