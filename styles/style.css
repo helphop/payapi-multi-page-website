@@ -88,7 +88,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     --fs-600: 4.8rem;
     --fs-700: 4.8rem;
     --fs-800: 4.8rem;
-    --fs-250: 1.5rem;
+    --fs-250: 1.8rem;
   }
 }
 
@@ -255,7 +255,7 @@ a {
 }
 
 .benefit__title {
-  font-size: var(--fs-250);
+  font-size: 1.8rem;
   font-weight: var(--fw-700);
   color: var(--clr-blue-300);
 }
@@ -593,26 +593,13 @@ a {
 
 footer {
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 footer .logo {
   margin: 0 auto;
   display: inline-block;
-}
-
-footer.bg-circle {
-  background-position: center top -35%;
-  background-size: 900px;
-}
-
-@media only screen and (min-width: 48.1em) {
-  footer.bg-circle {
-    background-position: 50vw 20%;
-  }
-}
-
-.social {
-  --gap: 3rem;
 }
 
 footer .nav {
@@ -626,8 +613,26 @@ footer .nav {
   }
 }
 
-footer .split-adapt {
-  --gap: 4rem;
+footer .circle__wrapper {
+  position: absolute;
+  display: block;
+  top: -50%;
+  right: 50%;
+  width: 80rem;
+  height: 80rem;
+  transform: translate(50%, 45%);
+}
+
+@media only screen and (min-width: 48.1em) {
+  footer .circle__wrapper {
+    transform: translate(30%, -10%);
+    top: 0;
+    right: 0;
+  }
+}
+
+.social {
+  --gap: 3rem;
   justify-self: center;
 }
 
@@ -880,7 +885,7 @@ ul.pricing__card-list li.light {
 }
 
 .contact__form {
-  width: 44.5rem;
+  max-width: 44.5rem;
   justify-self: center;
   text-align: left;
 }
