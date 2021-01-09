@@ -5,6 +5,8 @@
   gap: 4rem;
   position: relative;
 
+  & > * {z-index: 1;}
+
   .circle__wrapper {
       position: absolute;
       display: block;
